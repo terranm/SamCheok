@@ -1,0 +1,30 @@
+fileFormatVersion: 2
+guid: 3ae9c762ff04a104c9b984dd90de11eb
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    GameManager_1 = require(\"./GameManager\");\r\nclass PlayGayaCheck extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\r\n    OnTriggerEnter(coll) {\r\n        if (coll.gameObject.tag == \"Player\")
+    {\r\n            GameManager_1.default.instance.CharacterActive(false);\r\n       
+    }\r\n    }\r\n    OnTriggerExit(coll) {\r\n        if (coll.gameObject.tag ==
+    \"Player\") {\r\n            GameManager_1.default.instance.CharacterActive(true);\r\n       
+    }\r\n    }\r\n}\r\nexports.default = PlayGayaCheck;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUGxheUdheWFDaGVjay5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIlBsYXlHYXlhQ2hlY2sudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFDQSxpREFBcUQ7QUFDckQsK0NBQXdDO0FBRXhDLE1BQXFCLGFBQWMsU0FBUSxxQ0FBcUI7SUFFNUQsY0FBYyxDQUFDLElBQWU7UUFDMUIsSUFBRyxJQUFJLENBQUMsVUFBVSxDQUFDLEdBQUcsSUFBSSxRQUFRLEVBQUM7WUFDL0IscUJBQVcsQ0FBQyxRQUFRLENBQUMsZUFBZSxDQUFDLEtBQUssQ0FBQyxDQUFDO1NBQy9DO0lBQ0wsQ0FBQztJQUNELGFBQWEsQ0FBQyxJQUFlO1FBQ3pCLElBQUcsSUFBSSxDQUFDLFVBQVUsQ0FBQyxHQUFHLElBQUksUUFBUSxFQUFDO1lBQy9CLHFCQUFXLENBQUMsUUFBUSxDQUFDLGVBQWUsQ0FBQyxJQUFJLENBQUMsQ0FBQztTQUM5QztJQUNMLENBQUM7Q0FDSjtBQVpELGdDQVlDIn0=","assetPath":"Assets/ZepetoScripts/PlayGayaCheck.ts","manifest":{"properties":[],"name":"PlayGayaCheck","description":""},"isCompiled":true}'
+  typescriptHash: 2c522906f3c6e4caaf2b55f73cb72372
+  onlyWriteTrigger: 0

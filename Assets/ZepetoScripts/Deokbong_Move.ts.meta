@@ -1,0 +1,43 @@
+fileFormatVersion: 2
+guid: baac3ad386c84a3418d71d3692d5548b
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass Deokbong_Move extends
+    ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start() {\r\n        this.targetNum
+    = 0;\r\n        this.speedAdd = 1;\r\n        this.addNum = 1;\r\n        this.speed
+    = this.speedAdd;\r\n        // this.targets = this.transform.parent.gameObject;\r\n       
+    this.moveTargetList = this.targets.GetComponentsInChildren($typeof(UnityEngine_1.Transform));\r\n       
+    let temp = this.moveTargetList.shift();\r\n        // console.log(temp.name);\r\n       
+    // temp = this.moveTargetList.shift();\r\n        // console.log(temp.name);\r\n       
+    this.isStop = true;\r\n        this.StartCoroutine(this.Move());\r\n    }\r\n   
+    *Move() {\r\n        while (this.isStop) {\r\n            yield null;\r\n           
+    this.gameObject.transform.position = UnityEngine_1.Vector3.MoveTowards(this.gameObject.transform.position,
+    this.moveTargetList[this.targetNum].position, this.speed * UnityEngine_1.Time.deltaTime);\r\n           
+    let dist = (UnityEngine_1.Vector3.op_Subtraction(this.gameObject.transform.position,
+    this.moveTargetList[this.targetNum].position)).magnitude;\r\n            if (dist
+    < 0.1) {\r\n                this.gameObject.transform.position = this.moveTargetList[this.targetNum].position;\r\n               
+    this.targetNum += this.addNum;\r\n                if (this.targetNum == this.moveTargetList.length
+    || this.targetNum == -1) {\r\n                    this.addNum = -this.addNum;\r\n                   
+    this.targetNum += this.addNum;\r\n                    this.speed = this.speedAdd;\r\n               
+    }\r\n                this.gameObject.transform.LookAt(this.moveTargetList[this.targetNum].position);\r\n           
+    }\r\n        }\r\n        this.StopCoroutine(this.Move());\r\n    }\r\n}\r\nexports.default
+    = Deokbong_Move;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRGVva2JvbmdfTW92ZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkRlb2tib25nX01vdmUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSw2Q0FBbUU7QUFDbkUsaURBQXFEO0FBRXJELE1BQXFCLGFBQWMsU0FBUSxxQ0FBcUI7SUFZNUQsS0FBSztRQUNELElBQUksQ0FBQyxTQUFTLEdBQUcsQ0FBQyxDQUFDO1FBQ25CLElBQUksQ0FBQyxRQUFRLEdBQUcsQ0FBQyxDQUFDO1FBQ2xCLElBQUksQ0FBQyxNQUFNLEdBQUcsQ0FBQyxDQUFDO1FBQ2hCLElBQUksQ0FBQyxLQUFLLEdBQUcsSUFBSSxDQUFDLFFBQVEsQ0FBQztRQUMzQixtREFBbUQ7UUFDbkQsSUFBSSxDQUFDLGNBQWMsR0FBRyxJQUFJLENBQUMsT0FBTyxDQUFDLHVCQUF1QixTQUFDLHVCQUFTLEVBQUcsQ0FBQztRQUN4RSxJQUFJLElBQUksR0FBRyxJQUFJLENBQUMsY0FBYyxDQUFDLEtBQUssRUFBRSxDQUFDO1FBQ3ZDLDBCQUEwQjtRQUMxQixzQ0FBc0M7UUFDdEMsMEJBQTBCO1FBQzFCLElBQUksQ0FBQyxNQUFNLEdBQUcsSUFBSSxDQUFDO1FBQ25CLElBQUksQ0FBQyxjQUFjLENBQUMsSUFBSSxDQUFDLElBQUksRUFBRSxDQUFDLENBQUM7SUFDckMsQ0FBQztJQUVPLENBQUMsSUFBSTtRQUNULE9BQU0sSUFBSSxDQUFDLE1BQU0sRUFBQztZQUNkLE1BQU0sSUFBSSxDQUFDO1lBQ1gsSUFBSSxDQUFDLFVBQVUsQ0FBQyxTQUFTLENBQUMsUUFBUSxHQUFHLHFCQUFPLENBQUMsV0FBVyxDQUFDLElBQUksQ0FBQyxVQUFVLENBQUMsU0FBUyxDQUFDLFFBQVEsRUFBRSxJQUFJLENBQUMsY0FBYyxDQUFDLElBQUksQ0FBQyxTQUFTLENBQUMsQ0FBQyxRQUFRLEVBQUUsSUFBSSxDQUFDLEtBQUssR0FBRyxrQkFBSSxDQUFDLFNBQVMsQ0FBQyxDQUFDO1lBQ3hLLElBQUksSUFBSSxHQUFHLENBbENlLHFCQUFPLENBa0Q0Mm5CLGNBQWUsQ0FoQmg1bkIsSUFBSSxDQUFDLFVBQVUsQ0FBQyxTQUFTLENBQUMsUUFBUSxFQUFHLElBQUksQ0FBQyxjQUFjLENBQUMsSUFBSSxDQUFDLFNBQVMsQ0FBQyxDQUFDLFFBQVEsRUFBQyxDQUFDLFNBQVMsQ0FBQTtZQUN4RyxJQUFJLElBQUksR0FBRyxHQUFHLEVBQUM7Z0JBQ1gsSUFBSSxDQUFDLFVBQVUsQ0FBQyxTQUFTLENBQUMsUUFBUSxHQUFHLElBQUksQ0FBQyxjQUFjLENBQUMsSUFBSSxDQUFDLFNBQVMsQ0FBQyxDQUFDLFFBQVEsQ0FBQztnQkFDbEYsSUFBSSxDQUFDLFNBQVMsSUFBRSxJQUFJLENBQUMsTUFBTSxDQUFDO2dCQUM1QixJQUFJLElBQUksQ0FBQyxTQUFTLElBQUksSUFBSSxDQUFDLGNBQWMsQ0FBQyxNQUFNLElBQUksSUFBSSxDQUFDLFNBQVMsSUFBSSxDQUFDLENBQUMsRUFBQztvQkFDckUsSUFBSSxDQUFDLE1BQU0sR0FBRyxDQUFDLElBQUksQ0FBQyxNQUFNLENBQUM7b0JBQzNCLElBQUksQ0FBQyxTQUFTLElBQUksSUFBSSxDQUFDLE1BQU0sQ0FBQztvQkFDOUIsSUFBSSxDQUFDLEtBQUssR0FBRyxJQUFJLENBQUMsUUFBUSxDQUFDO2lCQUM5QjtnQkFFRCxJQUFJLENBQUMsVUFBVSxDQUFDLFNBQVMsQ0FBQyxNQUFNLENBQUMsSUFBSSxDQUFDLGNBQWMsQ0FBQyxJQUFJLENBQUMsU0FBUyxDQUFDLENBQUMsUUFBUSxDQUFDLENBQUM7YUFDbEY7U0FDSjtRQUNELElBQUksQ0FBQyxhQUFhLENBQUMsSUFBSSxDQUFDLElBQUksRUFBRSxDQUFDLENBQUM7SUFDcEMsQ0FBQztDQUVKO0FBL0NELGdDQStDQyJ9","assetPath":"Assets/ZepetoScripts/Deokbong_Move.ts","manifest":{"properties":[{"assembly":"UnityEngine.CoreModule","name":"targets","type":"UnityEngine.GameObject","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"targetNum","type":"System.Single","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"speed","type":"System.Single","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"Deokbong_Move","description":""},"isCompiled":true}'
+  typescriptHash: 6c117973ed8c3354afe08359f7020e19

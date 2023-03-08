@@ -1,0 +1,40 @@
+fileFormatVersion: 2
+guid: 8f5b947947add1f46a0791da0c858e69
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass ButterflyMove extends
+    ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start() {\r\n        this.butterflys
+    = new Array();\r\n        for (let i = 0; i < 24; i++) {\r\n            this.butterflys.push(this.transform.GetChild(i).gameObject);\r\n           
+    // console.log(\"butterflys \" + this.butterflys[i].name);\r\n        }\r\n       
+    // this.StartCoroutine(this.Move());\r\n    }\r\n    // private *Move(){\r\n   
+    //     while (true){\r\n    //         yield new WaitForSeconds(0.001);\r\n   
+    Update() {\r\n        this.butterflys.forEach((fly) => {\r\n            let pos
+    = fly.transform.position;\r\n            if (pos.y > 0) {\r\n               
+    pos.y -= Math.random() * 10;\r\n                UnityEngine_1.Vector3.MoveTowards(fly.transform.position,
+    pos, UnityEngine_1.Time.deltaTime * 0.5);\r\n            }\r\n            else
+    if (pos.y < 1) {\r\n                pos.y += Math.random() * 10;\r\n               
+    UnityEngine_1.Vector3.MoveTowards(fly.transform.position, pos, UnityEngine_1.Time.deltaTime
+    * 0.5);\r\n            }\r\n            if (\"butterfly_Y_Ani\" == fly.name)
+    {\r\n                // console.log(fly.name + \" \" + pos.y + \" \" + fly.transform.position.y);\r\n           
+    }\r\n        });\r\n        //     }\r\n    }\r\n}\r\nexports.default = ButterflyMove;\r\n//#
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQnV0dGVyZmx5TW92ZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkJ1dHRlcmZseU1vdmUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSw2Q0FBdUU7QUFDdkUsaURBQXFEO0FBRXJELE1BQXFCLGFBQWMsU0FBUSxxQ0FBcUI7SUFHNUQsS0FBSztRQUNELElBQUksQ0FBQyxVQUFVLEdBQUcsSUFBSSxLQUFLLEVBQUUsQ0FBQztRQUU5QixLQUFJLElBQUksQ0FBQyxHQUFHLENBQUMsRUFBRSxDQUFDLEdBQUcsRUFBRSxFQUFFLENBQUMsRUFBRSxFQUFDO1lBQ3ZCLElBQUksQ0FBQyxVQUFVLENBQUMsSUFBSSxDQUFDLElBQUksQ0FBQyxTQUFTLENBQUMsUUFBUSxDQUFDLENBQUMsQ0FBQyxDQUFDLFVBQVUsQ0FBQyxDQUFDO1lBQzVELHdEQUF3RDtTQUMzRDtRQUVELG9DQUFvQztJQUN4QyxDQUFDO0lBRUQsbUJBQW1CO0lBQ25CLG9CQUFvQjtJQUNwQiwyQ0FBMkM7SUFDM0MsTUFBTTtRQUNFLElBQUksQ0FBQyxVQUFVLENBQUMsT0FBTyxDQUFDLENBQUMsR0FBRyxFQUFDLEVBQUU7WUFDM0IsSUFBSSxHQUFHLEdBQUcsR0FBRyxDQUFDLFNBQVMsQ0FBQyxRQUFRLENBQUM7WUFDakMsSUFBSSxHQUFHLENBQUMsQ0FBQyxHQUFHLENBQUMsRUFBQztnQkFDVixHQUFHLENBQUMsQ0FBQyxJQUFJLElBQUksQ0FBQyxNQUFNLEVBQUUsR0FBRyxFQUFFLENBQUM7Z0JBQzVCLHFCQUFPLENBQUMsV0FBVyxDQUFDLEdBQUcsQ0FBQyxTQUFTLENBQUMsUUFBUSxFQUFFLEdBQUcsRUFBRSxrQkFBSSxDQUFDLFNBQVMsR0FBRyxHQUFHLENBQUMsQ0FBQzthQUMxRTtpQkFDSSxJQUFJLEdBQUcsQ0FBQyxDQUFDLEdBQUcsQ0FBQyxFQUFDO2dCQUNmLEdBQUcsQ0FBQyxDQUFDLElBQUksSUFBSSxDQUFDLE1BQU0sRUFBRSxHQUFHLEVBQUUsQ0FBQztnQkFDNUIscUJBQU8sQ0FBQyxXQUFXLENBQUMsR0FBRyxDQUFDLFNBQVMsQ0FBQyxRQUFRLEVBQUUsR0FBRyxFQUFFLGtCQUFJLENBQUMsU0FBUyxHQUFHLEdBQUcsQ0FBQyxDQUFDO2FBQzFFO1lBQ0QsSUFBSSxpQkFBaUIsSUFBSSxHQUFHLENBQUMsSUFBSSxFQUFDO2dCQUM5Qix3RUFBd0U7YUFDM0U7UUFDTCxDQUFDLENBQUMsQ0FBQztRQUNYLFFBQVE7SUFDUixDQUFDO0NBQ0o7QUFsQ0QsZ0NBa0NDIn0=","assetPath":"Assets/ZepetoScripts/ButterflyMove.ts","manifest":{"properties":[],"name":"ButterflyMove","description":""},"isCompiled":true}'
+  typescriptHash: 7508d3ef6cfd2d88cd9fa29e6e62d247
+  onlyWriteTrigger: 0

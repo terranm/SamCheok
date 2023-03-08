@@ -1,0 +1,7 @@
+{
+"State" : {"players" : {"map" : "Player"},"cars" : {"map" : "Car"}},
+"Player" : {"sessionId" : "string","zepetoHash" : "string","zepetoUserId" : "string","transform" : "Transform","state" : "number","ride" : "boolean","subState" : "number","popState" : "number"},
+"Transform" : {"position" : "Vector3","rotation" : "Vector3"},
+"Vector3" : {"x" : "number","y" : "number","z" : "number"},
+"Car" : {"velocity" : "Vector3","steer" : "Vector3","transform" : "Transform"}
+}

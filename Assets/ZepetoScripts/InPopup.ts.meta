@@ -1,0 +1,29 @@
+fileFormatVersion: 2
+guid: 1d731450ebd7d594c81e22401c9427f4
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    GameManager_1 = require(\"./GameManager\");\r\nclass InPopup extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\r\n    OnTriggerEnter(coll) {\r\n        if (coll.gameObject.tag == \"Player\")
+    {\r\n            GameManager_1.default.UI.NeverOpenCheck(GameManager_1.default.player.popState);\r\n           
+    GameManager_1.default.UI.Popup(\"Pop-\" + this.popStr);\r\n        }\r\n    }\r\n}\r\nexports.default
+    = InPopup;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSW5Qb3B1cC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkluUG9wdXAudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFDQSxpREFBcUQ7QUFDckQsK0NBQXdDO0FBRXhDLE1BQXFCLE9BQVEsU0FBUSxxQ0FBcUI7SUFFdEQsY0FBYyxDQUFDLElBQWU7UUFDMUIsSUFBRyxJQUFJLENBQUMsVUFBVSxDQUFDLEdBQUcsSUFBSSxRQUFRLEVBQUM7WUFDL0IscUJBQVcsQ0FBQyxFQUFFLENBQUMsY0FBYyxDQUFDLHFCQUFXLENBQUMsTUFBTSxDQUFDLFFBQVEsQ0FBQyxDQUFDO1lBQzNELHFCQUFXLENBQUMsRUFBRSxDQUFDLEtBQUssQ0FBQyxNQUFNLEdBQUcsSUFBSSxDQUFDLE1BQU0sQ0FBQyxDQUFDO1NBQzlDO0lBQ0wsQ0FBQztDQUNKO0FBUkQsMEJBUUMifQ==","assetPath":"Assets/ZepetoScripts/InPopup.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"popStr","type":"System.String","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"InPopup","description":""},"isCompiled":true}'
+  typescriptHash: 0f29d15bd2dcf798ed2d95f378c6dbd5
+  onlyWriteTrigger: 0

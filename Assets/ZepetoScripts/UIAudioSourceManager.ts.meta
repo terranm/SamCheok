@@ -1,0 +1,30 @@
+fileFormatVersion: 2
+guid: b166182129b2ee54dba065261b37dc9b
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass UIAudioSourceManager extends
+    ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start() {\r\n        this.AudioSource
+    = this.transform.GetComponent($typeof(UnityEngine_1.AudioSource));\r\n    }\r\n   
+    AudioPlay(clipNum) {\r\n        this.AudioSource.clip = this.AudioClips[clipNum];\r\n       
+    this.AudioSource.Play();\r\n    }\r\n}\r\nexports.default = UIAudioSourceManager;\r\n//#
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVUlBdWRpb1NvdXJjZU1hbmFnZXIuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJVSUF1ZGlvU291cmNlTWFuYWdlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLDZDQUFxRDtBQUNyRCxpREFBcUQ7QUFFckQsTUFBcUIsb0JBQXFCLFNBQVEscUNBQXFCO0lBS25FLEtBQUs7UUFDRCxJQUFJLENBQUMsV0FBVyxHQUFHLElBQUksQ0FBQyxTQUFTLENBQUMsWUFBWSxTQUFDLHlCQUFXLEVBQUcsQ0FBQztJQUNsRSxDQUFDO0lBRU0sU0FBUyxDQUFDLE9BQWdCO1FBQzdCLElBQUksQ0FBQyxXQUFXLENBQUMsSUFBSSxHQUFHLElBQUksQ0FBQyxVQUFVLENBQUMsT0FBTyxDQUFDLENBQUM7UUFDakQsSUFBSSxDQUFDLFdBQVcsQ0FBQyxJQUFJLEVBQUUsQ0FBQztJQUM1QixDQUFDO0NBRUo7QUFkRCx1Q0FjQyJ9","assetPath":"Assets/ZepetoScripts/UIAudioSourceManager.ts","manifest":{"properties":[{"assembly":"UnityEngine.AudioModule","name":"AudioClips","type":"UnityEngine.AudioClip[]","isArray":true,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"UIAudioSourceManager","description":""},"isCompiled":true}'
+  typescriptHash: bdd96297290fca7e997f6bae39509f44
+  onlyWriteTrigger: 0

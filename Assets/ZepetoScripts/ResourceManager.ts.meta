@@ -1,0 +1,30 @@
+fileFormatVersion: 2
+guid: 0e6df91250849b74fb9634934412b458
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nclass
+    ResourcesManager {\r\n    Load(path) {\r\n        return UnityEngine_1.Resources.Load(path);\r\n   
+    }\r\n    Instantiate(path, parent = null) {\r\n        let prefab = this.Load(`Prefabs/${path}`);\r\n       
+    if (prefab == null) {\r\n            console.log(`Failed to load prefab ${path}`);\r\n           
+    return null;\r\n        }\r\n        return UnityEngine_1.Object.Instantiate(prefab,
+    parent);\r\n    }\r\n    Destroy(go) {\r\n        if (go == null)\r\n           
+    return null;\r\n        UnityEngine_1.Object.Destroy(go);\r\n    }\r\n}\r\nexports.default
+    = ResourcesManager;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUmVzb3VyY2VNYW5hZ2VyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiUmVzb3VyY2VNYW5hZ2VyLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsNkNBQXNFO0FBRXRFLE1BQXFCLGdCQUFnQjtJQUUxQixJQUFJLENBQW1CLElBQVc7UUFDckMsT0FBTyx1QkFBUyxDQUFDLElBQUksQ0FBSSxJQUFJLENBQUMsQ0FBQztJQUNuQyxDQUFDO0lBRU0sV0FBVyxDQUFDLElBQVcsRUFBRSxTQUFtQixJQUFJO1FBQ25ELElBQUksTUFBTSxHQUFHLElBQUksQ0FBQyxJQUFJLENBQWEsV0FBVyxJQUFJLEVBQUUsQ0FBQyxDQUFDO1FBRXRELElBQUcsTUFBTSxJQUFJLElBQUksRUFBQztZQUNkLE9BQU8sQ0FBQyxHQUFHLENBQUMseUJBQXlCLElBQUksRUFBRSxDQUFDLENBQUM7WUFDN0MsT0FBTyxJQUFJLENBQUM7U0FDZjtRQUVELE9BQU8sb0JBQU0sQ0FBQyxXQUFXLENBQUMsTUFBTSxFQUFFLE1BQU0sQ0FBZSxDQUFDO0lBQzVELENBQUM7SUFFTSxPQUFPLENBQUMsRUFBYTtRQUN4QixJQUFHLEVBQUUsSUFBSSxJQUFJO1lBQ1QsT0FBTyxJQUFJLENBQUM7UUFFaEIsb0JBQU0sQ0FBQyxPQUFPLENBQUMsRUFBRSxDQUFDLENBQUM7SUFDdkIsQ0FBQztDQUNKO0FBdkJELG1DQXVCQyJ9","assetPath":"Assets/ZepetoScripts/ResourceManager.ts","manifest":{"properties":[],"name":"ResourcesManager","description":""},"isCompiled":true}'
+  typescriptHash: f851982b785df8d082e07160d6c632bf

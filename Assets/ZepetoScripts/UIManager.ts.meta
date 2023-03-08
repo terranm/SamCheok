@@ -1,0 +1,208 @@
+fileFormatVersion: 2
+guid: 16df2a63ef9ee73468dddc767c394265
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: "{\"source\":\"\\\"use strict\\\";\\r\\nObject.defineProperty(exports,
+    \\\"__esModule\\\", { value: true });\\r\\nconst UnityEngine_1 = require(\\\"UnityEngine\\\");\\r\\nconst
+    UnityEngine_UI_1 = require(\\\"UnityEngine.UI\\\");\\r\\nconst GameManager_1
+    = require(\\\"./GameManager\\\");\\r\\nclass UIManager {\\r\\n    constructor()
+    {\\r\\n        // private sprites: Map<string, Sprite> = new Map<string, Sprite>();\\r\\n       
+    // private spritesBtn: Map<string, Sprite> = new Map<string, Sprite>();\\r\\n       
+    this.popup = new Map();\\r\\n        //private room:Room;\\r\\n        //private
+    gameManager:GameManager;\\r\\n        this.boolObj = null;\\r\\n        this.isPopupOn
+    = false;\\r\\n        this.isScrolling = false;\\r\\n        // Glasses(){\\r\\n       
+    //     if(GameManager.player.quest >= 6){  \\r\\n        //         let glasses
+    = GameManager.GetInstance.glassesMap.get(this.room.SessionId);\\r\\n        //        
+    if(glasses == null || glasses.gameObject.activeSelf == false)\\r\\n        //        
+    {\\r\\n        //             this.gameManager.WearGlasses(this.room.SessionId);\\r\\n       
+    //             this.glassesBtn.gameObject.SetActive(false);\\r\\n        //            
+    this.glassesOffBtn.gameObject.SetActive(true);\\r\\n        //         }  \\r\\n       
+    //         else{\\r\\n        //             this.gameManager.TurnOffObj(\\\"glasses\\\",
+    this.room.SessionId);\\r\\n        //             this.glassesBtn.gameObject.SetActive(true);\\r\\n       
+    //             this.glassesOffBtn.gameObject.SetActive(false);\\r\\n        //        
+    }\\r\\n        //     }\\r\\n        //    else{\\r\\n        //         //GameManager.UI().ShowUI(\\\"x\\\",
+    1);\\r\\n        //         this.ShowUI(\\\"x\\\", 1);\\r\\n        //    }\\r\\n       
+    // }\\r\\n        // Balloon(){\\r\\n        //     if(GameManager.player.quest
+    >= 12){\\r\\n        //         let balloon = GameManager.GetInstance.ballonMap.get(this.room.SessionId);\\r\\n       
+    //         if(balloon == null ||balloon.activeSelf == false)\\r\\n        //        
+    {\\r\\n        //             this.gameManager.WearBalloon(this.room.SessionId);\\r\\n       
+    //             this.balloonBtn.gameObject.SetActive(false);\\r\\n        //            
+    this.balloonOffBtn.gameObject.SetActive(true);\\r\\n        //         }\\r\\n       
+    //         else{\\r\\n        //             this.gameManager.TurnOffObj(\\\"balloon\\\",
+    this.room.SessionId);\\r\\n        //             this.balloonBtn.gameObject.SetActive(true);\\r\\n       
+    //             this.balloonOffBtn.gameObject.SetActive(false);\\r\\n        //        
+    }\\r\\n        //    }\\r\\n        //    else{\\r\\n        //         //GameManager.UI().ShowUI(\\\"x\\\",
+    1);\\r\\n        //         this.ShowUI(\\\"x\\\",1);\\r\\n        //     }\\r\\n       
+    // }\\r\\n        // Wing(){\\r\\n        //     if(GameManager.player.quest
+    >= 18){\\r\\n        //         let wing = GameManager.GetInstance.wingMap.get(this.room.SessionId);\\r\\n       
+    //         if(wing == null || wing.activeSelf == false)\\r\\n        //        
+    {\\r\\n        //             this.gameManager.WearWing(this.room.SessionId);\\r\\n       
+    //             this.wingBtn.gameObject.SetActive(false);\\r\\n        //            
+    this.wingOffBtn.gameObject.SetActive(true);\\r\\n        //         }\\r\\n       
+    //         else{\\r\\n        //             this.gameManager.TurnOffObj(\\\"wing\\\",this.room.SessionId);\\r\\n       
+    //             this.wingBtn.gameObject.SetActive(true);\\r\\n        //            
+    this.wingOffBtn.gameObject.SetActive(false);\\r\\n        //         }\\r\\n       
+    // }\\r\\n        // else{\\r\\n        //         //GameManager.UI().ShowUI(\\\"x\\\",
+    1);\\r\\n        //         this.ShowUI(\\\"x\\\",1);\\r\\n        // }\\r\\n       
+    // }\\r\\n        // *Delay(num:string){\\r\\n        //     yield new WaitForSeconds(1);\\r\\n       
+    //     console.log(\\\"startcour\\\");\\r\\n        //     this.MoveNextPopup(num,
+    1);\\r\\n        // }\\r\\n    }\\r\\n    Init() {\\r\\n        //this.gameManager
+    = GameManager.instance;\\r\\n        this.canvasObj = UnityEngine_1.GameObject.Find(\\\"Canvas_UI\\\").gameObject;\\r\\n       
+    let ScrollPop = this.canvasObj.transform.GetChild(1).GetComponentsInChildren($typeof(UnityEngine_1.Transform));\\r\\n       
+    let Quest = this.canvasObj.transform.GetChild(2).GetComponentsInChildren($typeof(UnityEngine_1.Transform));\\r\\n       
+    let Pop = this.canvasObj.transform.GetChild(3).GetComponentsInChildren($typeof(UnityEngine_1.Transform));\\r\\n       
+    this.PopupInit(ScrollPop, 1);\\r\\n        this.PopupInit(Quest);\\r\\n       
+    this.PopupInit(Pop, 3);\\r\\n        for (let i = 1; i < 4; i++) {\\r\\n           
+    this.popup.get(\\\"Quest-F\\\" + i).GetComponentInChildren($typeof(UnityEngine_UI_1.Button)).onClick.AddListener(()
+    => {\\r\\n                this.Popup(\\\"Quest-F\\\" + (i + 1));\\r\\n           
+    });\\r\\n        }\\r\\n        for (let i = 1; i < 3; i++) {\\r\\n           
+    this.popup.get(\\\"Quest-D\\\" + i).GetComponentInChildren($typeof(UnityEngine_UI_1.Button)).onClick.AddListener(()
+    => {\\r\\n                this.Popup(\\\"Quest-D\\\" + (i + 1));\\r\\n           
+    });\\r\\n        }\\r\\n        for (let i = 1; i < 3; i++) {\\r\\n           
+    this.popup.get(\\\"Quest-B\\\" + i).GetComponentInChildren($typeof(UnityEngine_UI_1.Button)).onClick.AddListener(()
+    => {\\r\\n                this.Popup(\\\"Quest-B\\\" + (i + 1));\\r\\n           
+    });\\r\\n        }\\r\\n        //\uC785\uC7A5 \uD31D\uC5C5\\r\\n        this.popup.get(\\\"Pop-WorldIn\\\").transform.GetChild(0).GetComponent($typeof(UnityEngine_UI_1.Button)).onClick.AddListener(()
+    => {\\r\\n            this.NeverOpen(\\\"Pop-WorldIn\\\");\\r\\n        });\\r\\n       
+    this.popup.get(\\\"Pop-ForestIn\\\").transform.GetChild(0).GetComponent($typeof(UnityEngine_UI_1.Button)).onClick.AddListener(()
+    => {\\r\\n            this.NeverOpen(\\\"Pop-ForestIn\\\");\\r\\n        });\\r\\n       
+    this.popup.get(\\\"Pop-HiddenIn\\\").transform.GetChild(0).GetComponent($typeof(UnityEngine_UI_1.Button)).onClick.AddListener(()
+    => {\\r\\n            this.NeverOpen(\\\"Pop-HiddenIn\\\");\\r\\n        });\\r\\n       
+    // UI        \\r\\n        let mainUI = this.canvasObj.transform.GetChild(0);\\r\\n       
+    // \uC124\uC815\uCC3D\\r\\n        let setup = mainUI.GetChild(0);\\r\\n       
+    let setupPop = setup.GetChild(0);\\r\\n        setup.GetComponent($typeof(UnityEngine_UI_1.Button)).onClick.AddListener(()
+    => {\\r\\n            if (!setupPop.gameObject.activeSelf) {\\r\\n               
+    GameManager_1.default.instance.UIAudioPlay(2);\\r\\n                setupPop.gameObject.SetActive(true);\\r\\n           
+    }\\r\\n            else {\\r\\n                setupPop.gameObject.SetActive(false);\\r\\n           
+    }\\r\\n        });\\r\\n        setupPop.GetChild(0).GetComponent($typeof(UnityEngine_UI_1.Button)).onClick.AddListener(()
+    => {\\r\\n            setupPop.gameObject.SetActive(false);\\r\\n        });\\r\\n       
+    setupPop.GetChild(1).GetComponent($typeof(UnityEngine_UI_1.Button)).onClick.AddListener(()
+    => {\\r\\n            // \uC624\uB514\uC624 \uB9AC\uC2A4\uB108 \uCF1C\uAE30\\r\\n           
+    setupPop.GetChild(1).gameObject.SetActive(false);\\r\\n            setupPop.GetChild(2).gameObject.SetActive(true);\\r\\n           
+    GameManager_1.default.instance.AudioOnOff(true);\\r\\n        });\\r\\n       
+    setupPop.GetChild(2).GetComponent($typeof(UnityEngine_UI_1.Button)).onClick.AddListener(()
+    => {\\r\\n            // \uC624\uB514\uC624 \uB9AC\uC2A4\uB108 \uB044\uAE30\\r\\n           
+    setupPop.GetChild(1).gameObject.SetActive(true);\\r\\n            setupPop.GetChild(2).gameObject.SetActive(false);\\r\\n           
+    GameManager_1.default.instance.AudioOnOff(false);\\r\\n        });\\r\\n       
+    setupPop.GetChild(1).gameObject.SetActive(false);\\r\\n        setupPop.GetChild(2).gameObject.SetActive(true);\\r\\n       
+    setupPop.GetChild(3).GetComponent($typeof(UnityEngine_UI_1.Button)).onClick.AddListener(()
+    => {\\r\\n            // 3\uC778\uCE6D \uC2DC\uC810\\r\\n            setupPop.GetChild(3).gameObject.SetActive(false);\\r\\n           
+    setupPop.GetChild(4).gameObject.SetActive(true);\\r\\n            GameManager_1.default.instance.ChangeViewpoint(false);\\r\\n       
+    });\\r\\n        setupPop.GetChild(4).GetComponent($typeof(UnityEngine_UI_1.Button)).onClick.AddListener(()
+    => {\\r\\n            // 1\uC778\uCE6D \uC2DC\uC810\\r\\n            setupPop.GetChild(3).gameObject.SetActive(true);\\r\\n           
+    setupPop.GetChild(4).gameObject.SetActive(false);\\r\\n            GameManager_1.default.instance.ChangeViewpoint(true);\\r\\n       
+    });\\r\\n        setupPop.GetChild(3).gameObject.SetActive(false);\\r\\n       
+    setupPop.GetChild(4).gameObject.SetActive(true);\\r\\n        setupPop.gameObject.SetActive(false);\\r\\n       
+    // \uD018\uC2A4\uD2B8 \uD604\uD669\uCC3D\\r\\n        let bag = mainUI.GetChild(1);\\r\\n       
+    let questList = bag.GetChild(0);\\r\\n        bag.GetComponent($typeof(UnityEngine_UI_1.Button)).onClick.AddListener(()
+    => {\\r\\n            if (!questList.gameObject.activeSelf) {\\r\\n               
+    GameManager_1.default.instance.UIAudioPlay(2);\\r\\n                questList.gameObject.SetActive(true);\\r\\n           
+    }\\r\\n            else {\\r\\n                questList.gameObject.SetActive(false);\\r\\n           
+    }\\r\\n        });\\r\\n        questList.GetChild(0).GetComponent($typeof(UnityEngine_UI_1.Button)).onClick.AddListener(()
+    => {\\r\\n            questList.gameObject.SetActive(false);\\r\\n        });\\r\\n       
+    this.checkMark = new Array();\\r\\n        for (let i = 1; i < 4; i++) {\\r\\n           
+    this.checkMark.push(questList.GetChild(i).gameObject);\\r\\n            questList.GetChild(i).gameObject.SetActive(false);\\r\\n       
+    }\\r\\n        questList.gameObject.SetActive(false);\\r\\n        // \uB0B4\uB9AC\uAE30
+    \uBC84\uD2BC\\r\\n        this.RideDownBtn = mainUI.GetChild(2);\\r\\n       
+    this.RideDownBtn.GetComponent($typeof(UnityEngine_UI_1.Button)).onClick.AddListener(()
+    => {\\r\\n            GameManager_1.default.instance.UIAudioPlay(3);\\r\\n           
+    GameManager_1.default.instance.RideOffDeokbong(); // \uB355\uBD09\uC774 \uB0B4\uB9AC\uAE30\\r\\n           
+    GameManager_1.default.instance.RideOffKayak(); // \uB355\uBD09\uC774 \uB0B4\uB9AC\uAE30\\r\\n           
+    GameManager_1.default.instance.PlayOffGaya(); // \uAC00\uC57C\uAE08 \uB0B4\uB9AC\uAE30\\r\\n           
+    GameManager_1.default.instance.StandSunbed(); // \uC120\uBC30\uB4DC \uB0B4\uB9AC\uAE30\\r\\n           
+    this.RideDownBtn.gameObject.SetActive(false);\\r\\n        });\\r\\n        this.RideDownBtn.gameObject.SetActive(false);\\r\\n       
+    this.bokCntImg = mainUI.GetChild(3);\\r\\n        this.bokCntImg.gameObject.SetActive(false);\\r\\n       
+    this.DeaCntImg = mainUI.GetChild(4);\\r\\n        this.DeaCntImg.gameObject.SetActive(false);\\r\\n       
+    // \uB85C\uB529 UI\\r\\n        this.loadingUI = this.canvasObj.transform.GetChild(4);\\r\\n   
+    }\\r\\n    QuestClear(num) {\\r\\n        this.checkMark[num].SetActive(true);\\r\\n   
+    }\\r\\n    /// \uAC01 \uC7A5\uC18C \uB2E4\uC2DC \uC5F4\uC9C0 \uC54A\uAE30\\r\\n   
+    NeverOpen(str) {\\r\\n        GameManager_1.default.Resource.Destroy(this.popup.get(str));\\r\\n       
+    switch (str) {\\r\\n            case \\\"Pop-WorldIn\\\":\\r\\n               
+    if (GameManager_1.default.player.popState < 100) {\\r\\n                    GameManager_1.default.Room.Send(\\\"popStateUpdate\\\",
+    GameManager_1.default.player.popState + 100);\\r\\n                }\\r\\n               
+    break;\\r\\n            case \\\"Pop-ForestIn\\\":\\r\\n                if (GameManager_1.default.player.popState
+    % 100 < 10) {\\r\\n                    GameManager_1.default.Room.Send(\\\"popStateUpdate\\\",
+    GameManager_1.default.player.popState + 10);\\r\\n                }\\r\\n               
+    break;\\r\\n            case \\\"Pop-HiddenIn\\\":\\r\\n                if (GameManager_1.default.player.popState
+    % 10 < 1) {\\r\\n                    GameManager_1.default.Room.Send(\\\"popStateUpdate\\\",
+    GameManager_1.default.player.popState + 1);\\r\\n                }\\r\\n               
+    break;\\r\\n        }\\r\\n        this.popup.delete(str);\\r\\n    }\\r\\n   
+    NeverOpenCheck(num) {\\r\\n        console.log(\\\"NeverOpenCheck \\\" + num);\\r\\n       
+    if (num >= 100) {\\r\\n            this.NeverOpen(\\\"Pop-WorldIn\\\");\\r\\n           
+    console.log(\\\"Pop-WorldIn \\\" + num);\\r\\n        }\\r\\n        if (num
+    % 100 >= 10) {\\r\\n            this.NeverOpen(\\\"Pop-ForestIn\\\");\\r\\n           
+    console.log(\\\"Pop-ForestIn \\\" + num);\\r\\n        }\\r\\n        if (num
+    % 10 >= 1) {\\r\\n            this.NeverOpen(\\\"Pop-HiddenIn\\\");\\r\\n           
+    console.log(\\\"Pop-HiddenIn \\\" + num);\\r\\n        }\\r\\n    }\\r\\n   
+    // public RoomInit(room:Room){\\r\\n    //     this.room = room;    \\r\\n   
+    // }\\r\\n    PopupInit(obj, btnTrNum = 2) {\\r\\n        let objOri = obj.shift();\\r\\n       
+    for (let i = 0; i < obj.length; i++) {\\r\\n            // if(isUpper){\\r\\n           
+    //     this.popup.set(objOri.name + \\\"-\\\" + obj[i].name, obj[i].gameObject);\\r\\n           
+    //     obj[i].gameObject.SetActive(false);\\r\\n            // }\\r\\n           
+    // else {\\r\\n            if (i % btnTrNum == 0) {\\r\\n                this.popup.set(objOri.name
+    + \\\"-\\\" + obj[i].name, obj[i].gameObject);\\r\\n                obj[i].gameObject.SetActive(false);\\r\\n           
+    }\\r\\n            else {\\r\\n                let btn = obj[i].transform.GetComponent($typeof(UnityEngine_UI_1.Button));\\r\\n               
+    btn.onClick.AddListener(() => {\\r\\n                    this.ClosePopui(obj[i].parent);\\r\\n                   
+    this.isPopupOn = false;\\r\\n                });\\r\\n            }\\r\\n           
+    // }\\r\\n        }\\r\\n        //obj[1].gameObject.SetActive(true);\\r\\n       
+    objOri.gameObject.SetActive(false);\\r\\n    }\\r\\n    Popup(name, popupOffTime
+    = 0) {\\r\\n        // console.log(\\\"call \\\" + name);\\r\\n        let trans;\\r\\n       
+    if (this.popup.get(name) != null) {\\r\\n            let pop = this.popup.get(name);\\r\\n           
+    pop.transform.parent.gameObject.SetActive(true);\\r\\n            pop.SetActive(true);\\r\\n           
+    trans = pop.transform;\\r\\n            // console.log(\\\"call 2 \\\"+pop.transform.parent.name);\\r\\n           
+    if (popupOffTime != 0) {\\r\\n                GameManager_1.default.instance.CourutineStarter(this.PopupOff(trans,
+    popupOffTime));\\r\\n            }\\r\\n            else {\\r\\n               
+    this.isPopupOn = true;\\r\\n            }\\r\\n            // console.log(\\\"call2
+    \\\" + name);\\r\\n        }\\r\\n        // console.log(\\\"call3 \\\" + name);\\r\\n   
+    }\\r\\n    *PopupOff(trans, popupOffTime) {\\r\\n        yield new UnityEngine_1.WaitForSeconds(popupOffTime);\\r\\n       
+    this.ClosePopui(trans);\\r\\n    }\\r\\n    ClosePopui(tr) {\\r\\n        //if(popupClose)
+    \\r\\n        tr.transform.gameObject.SetActive(false);\\r\\n        tr.transform.parent.gameObject.SetActive(false);\\r\\n   
+    }\\r\\n    Popup_Scroll(name) {\\r\\n        if (this.isScrolling) {\\r\\n           
+    return;\\r\\n        }\\r\\n        this.isScrolling = true;\\r\\n        let
+    pop = this.popup.get(name);\\r\\n        this.Popup(name, 5);\\r\\n        //
+    let y = pop.GetComponent<RectTransform>().position.y - 200;\\r\\n        // let
+    pos = new Vector3(0,y,0);\\r\\n        // pop.GetComponent<RectTransform>().position
+    = pos;\\r\\n        GameManager_1.default.instance.CourutineStarter(this.Scrolling(pop));\\r\\n   
+    }\\r\\n    *Scrolling(pop) {\\r\\n        let rectPos = new UnityEngine_1.Vector3(0,
+    0, 0);\\r\\n        rectPos = pop.GetComponent($typeof(UnityEngine_1.RectTransform)).position;\\r\\n       
+    // console.log(\\\"rectPos x : \\\" + rectPos.x + \\\" y : \\\"+ rectPos.y +
+    \\\" z : \\\"+ rectPos.z);\\r\\n        let tempY = rectPos.y;\\r\\n        rectPos.y
+    += 200;\\r\\n        pop.GetComponent($typeof(UnityEngine_1.RectTransform)).position
+    = rectPos;\\r\\n        while (rectPos.y > tempY) {\\r\\n            yield new
+    UnityEngine_1.WaitForSeconds(0.001);\\r\\n            rectPos.y -= 5;\\r\\n           
+    pop.GetComponent($typeof(UnityEngine_1.RectTransform)).position = rectPos;\\r\\n       
+    }\\r\\n        yield new UnityEngine_1.WaitForSeconds(2);\\r\\n        while
+    (rectPos.y < (tempY + 200)) {\\r\\n            yield new UnityEngine_1.WaitForSeconds(0.001);\\r\\n           
+    rectPos.y += 5;\\r\\n            pop.GetComponent($typeof(UnityEngine_1.RectTransform)).position
+    = rectPos;\\r\\n        }\\r\\n        yield new UnityEngine_1.WaitForSeconds(0.5);\\r\\n       
+    rectPos.y = tempY;\\r\\n        pop.GetComponent($typeof(UnityEngine_1.RectTransform)).position
+    = rectPos;\\r\\n        this.isScrolling = false;\\r\\n        GameManager_1.default.instance.CourutineStopper(this.Scrolling(pop));\\r\\n   
+    }\\r\\n    // public MoveNextPopup(name:string, level:number = null, delay:number
+    = null){ // \uD018\uC2A4\uD2B8 \uC9C4\uD589 \uAD00\uB828\uC778 \uAC83\uC73C\uB85C
+    \uBCF4\uC784\\r\\n    //     if(this.boolObj == null || this.boolObj == undefined){\\r\\n   
+    //         this.boolObj = this.popup.get(name);\\r\\n    //     }\\r\\n    //    
+    else{\\r\\n    //         this.boolObj.SetActive(false);\\r\\n    //        
+    this.boolObj = this.popup.get(name);\\r\\n    //     }\\r\\n    //     this.boolObj.SetActive(true);\\r\\n   
+    //     if(level != null && name != \\\"x\\\"){\\r\\n    //         GameManager.Room.Send(\\\"QuestUpdate\\\",
+    parseInt(name));\\r\\n    //     }\\r\\n    // }\\r\\n    GetItem(name) {\\r\\n       
+    // if(name == \\\"glasses\\\"){\\r\\n        //     this.glassesOffBtn.gameObject.SetActive(true);\\r\\n       
+    // }\\r\\n        // else if(name == \\\"balloon\\\"){\\r\\n        //     this.balloonOffBtn.gameObject.SetActive(true);\\r\\n       
+    // }\\r\\n        // else{\\r\\n        //     this.wingOffBtn.gameObject.SetActive(true);\\r\\n       
+    // }\\r\\n    }\\r\\n}\\r\\nexports.default = UIManager;\\r\\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVUlNYW5hZ2VyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiVUlNYW5hZ2VyLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsNkNBQTBIO0FBQzFILG1EQUErQztBQUUvQywrQ0FBd0M7QUFFeEMsTUFBcUIsU0FBUztJQUE5QjtRQUVJLG9FQUFvRTtRQUNwRSx1RUFBdUU7UUFDL0QsVUFBSyxHQUEyQixJQUFJLEdBQUcsRUFBc0IsQ0FBQztRQUN0RSxvQkFBb0I7UUFDcEIsa0NBQWtDO1FBRTFCLFlBQU8sR0FBYyxJQUFJLENBQUM7UUFPM0IsY0FBUyxHQUFhLEtBQUssQ0FBQztRQWdRM0IsZ0JBQVcsR0FBWSxLQUFLLENBQUM7UUFrRXJDLGFBQWE7UUFDYiwyQ0FBMkM7UUFDM0MscUZBQXFGO1FBRXJGLHdFQUF3RTtRQUN4RSxZQUFZO1FBQ1osaUVBQWlFO1FBQ2pFLDJEQUEyRDtRQUMzRCw2REFBNkQ7UUFDN0QsY0FBYztRQUNkLGdCQUFnQjtRQUNoQiwyRUFBMkU7UUFDM0UsMERBQTBEO1FBQzFELDhEQUE4RDtRQUM5RCxZQUFZO1FBQ1osUUFBUTtRQUNSLFdBQVc7UUFDWCw2Q0FBNkM7UUFDN0MsK0JBQStCO1FBQy9CLE9BQU87UUFDUCxJQUFJO1FBRUosYUFBYTtRQUNiLDBDQUEwQztRQUMxQyxvRkFBb0Y7UUFFcEYsNERBQTREO1FBQzVELFlBQVk7UUFDWixpRUFBaUU7UUFDakUsMkRBQTJEO1FBQzNELDZEQUE2RDtRQUM3RCxZQUFZO1FBQ1osZ0JBQWdCO1FBQ2hCLDJFQUEyRTtRQUMzRSwwREFBMEQ7UUFDMUQsOERBQThEO1FBQzlELFlBQVk7UUFDWixPQUFPO1FBQ1AsV0FBVztRQUNYLDZDQUE2QztRQUM3Qyw4QkFBOEI7UUFDOUIsUUFBUTtRQUNSLElBQUk7UUFFSixVQUFVO1FBQ1YsMENBQTBDO1FBQzFDLCtFQUErRTtRQUUvRSx1REFBdUQ7UUFDdkQsWUFBWTtRQUNaLDhEQUE4RDtRQUM5RCx3REFBd0Q7UUFDeEQsMERBQTBEO1FBQzFELFlBQVk7UUFDWixnQkFBZ0I7UUFDaEIsdUVBQXVFO1FBQ3ZFLHVEQUF1RDtRQUN2RCwyREFBMkQ7UUFDM0QsWUFBWTtRQUNaLElBQUk7UUFDSixRQUFRO1FBQ1IsNkNBQTZDO1FBQzdDLDhCQUE4QjtRQUM5QixJQUFJO1FBQ0osSUFBSTtRQUVKLHNCQUFzQjtRQUN0QixtQ0FBbUM7UUFDbkMsZ0NBQWdDO1FBQ2hDLGtDQUFrQztRQUNsQyxJQUFJO0lBR1IsQ0FBQztJQXhZVSxJQUFJO1FBQ1AsMENBQTBDO1FBQzFDLElBQUksQ0FBQyxTQUFTLEdBQUcsd0JBQVUsQ0FBQyxJQUFJLENBQUMsV0FBVyxDQUFDLENBQUMsVUFBVSxDQUFDO1FBRXpELElBQUksU0FBUyxHQUFHLElBQUksQ0FBQyxTQUFTLENBQUMsU0FBUyxDQUFDLFFBQVEsQ0FBQyxDQUFDLENBQUMsQ0FBQyx1QkFBdUIsU0FBQyx1QkFBUyxFQUFHLENBQUM7UUFDMUYsSUFBSSxLQUFLLEdBQUcsSUFBSSxDQUFDLFNBQVMsQ0FBQyxTQUFTLENBQUMsUUFBUSxDQUFDLENBQUMsQ0FBQyxDQUFDLHVCQUF1QixTQUFDLHVCQUFTLEVBQUcsQ0FBQztRQUN0RixJQUFJLEdBQUcsR0FBSSxJQUFJLENBQUMsU0FBUyxDQUFDLFNBQVMsQ0FBQyxRQUFRLENBQUMsQ0FBQyxDQUFDLENBQUMsdUJBQXVCLFNBQUMsdUJBQVMsRUFBRyxDQUFDO1FBRXJGLElBQUksQ0FBQyxTQUFTLENBQUMsU0FBUyxFQUFFLENBQUMsQ0FBQyxDQUFDO1FBQzdCLElBQUksQ0FBQyxTQUFTLENBQUMsS0FBSyxDQUFDLENBQUM7UUFDdEIsSUFBSSxDQUFDLFNBQVMsQ0FBQyxHQUFHLEVBQUUsQ0FBQyxDQUFDLENBQUM7UUFFdkIsS0FBSSxJQUFJLENBQUMsR0FBRyxDQUFDLEVBQUUsQ0FBQyxHQUFHLENBQUMsRUFBRSxDQUFDLEVBQUUsRUFBQztZQUN0QixJQUFJLENBQUMsS0FBSyxDQUFDLEdBQUcsQ0FBQyxTQUFTLEdBQUcsQ0FBQyxDQUFDLENBQUMsc0JBQXNCLFNBQUMsdUJBQU0sR0FBSSxPQUFPLENBQUMsV0FBVyxDQUFDLEdBQUUsRUFBRTtnQkFDbkYsSUFBSSxDQUFDLEtBQUssQ0FBQyxTQUFTLEdBQUcsQ0FBQyxDQUFDLEdBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQztZQUNsQyxDQUFDLENBQUMsQ0FBQztTQUNOO1FBQ0QsS0FBSSxJQUFJLENBQUMsR0FBRyxDQUFDLEVBQUUsQ0FBQyxHQUFHLENBQUMsRUFBRSxDQUFDLEVBQUUsRUFBQztZQUN0QixJQUFJLENBQUMsS0FBSyxDQUFDLEdBQUcsQ0FBQyxTQUFTLEdBQUcsQ0FBQyxDQUFDLENBQUMsc0JBQXNCLFNBQUMsdUJBQU0sR0FBSSxPQUFPLENBQUMsV0FBVyxDQUFDLEdBQUUsRUFBRTtnQkFDbkYsSUFBSSxDQUFDLEtBQUssQ0FBQyxTQUFTLEdBQUcsQ0FBQyxDQUFDLEdBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQztZQUNsQyxDQUFDLENBQUMsQ0FBQztTQUNOO1FBQ0QsS0FBSSxJQUFJLENBQUMsR0FBRyxDQUFDLEVBQUUsQ0FBQyxHQUFHLENBQUMsRUFBRSxDQUFDLEVBQUUsRUFBQztZQUN0QixJQUFJLENBQUMsS0FBSyxDQUFDLEdBQUcsQ0FBQyxTQUFTLEdBQUcsQ0FBQyxDQUFDLENBQUMsc0JBQXNCLFNBQUMsdUJBQU0sR0FBSSxPQUFPLENBQUMsV0FBVyxDQUFDLEdBQUUsRUFBRTtnQkFDbkYsSUFBSSxDQUFDLEtBQUssQ0FBQyxTQUFTLEdBQUcsQ0FBQyxDQUFDLEdBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQztZQUNsQyxDQUFDLENBQUMsQ0FBQztTQUNOO1FBRUQsT0FBTztRQUNQLElBQUksQ0FBQyxLQUFLLENBQUMsR0FBRyxDQUFDLGFBQWEsQ0FBQyxDQUFDLFNBQVMsQ0FBQyxRQUFRLENBQUMsQ0FBQyxDQUFDLENBQUMsWUFBWSxTQUFDLHVCQUFNLEdBQUksT0FBTyxDQUFDLFdBQVcsQ0FBQyxHQUFFLEVBQUU7WUFDL0YsSUFBSSxDQUFDLFNBQVMsQ0FBQyxhQUFhLENBQUMsQ0FBQztR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LENBQUMsS0FBSyxDQUFDLENBQUM7U0FDckQ7UUFFRCxTQUFTLENBQUMsVUFBVSxDQUFDLFNBQVMsQ0FBQyxLQUFLLENBQUMsQ0FBQztRQUV0QyxTQUFTO1FBQ1QsSUFBSSxDQUFDLFdBQVcsR0FBRyxNQUFNLENBQUMsUUFBUSxDQUFDLENBQUMsQ0FBQyxDQUFDO1FBQ3RDLElBQUksQ0FBQyxXQUFXLENBQUMsWUFBWSxTQUFDLHVCQUFNLEdBQUksT0FBTyxDQUFDLFdBQVcsQ0FBQyxHQUFFLEVBQUU7WUFDNUQscUJBQVcsQ0FBQyxRQUFRLENBQUMsV0FBVyxDQUFDLENBQUMsQ0FBQyxDQUFDO1lBQ3BDLHFCQUFXLENBQUMsUUFBUSxDQUFDLGVBQWUsRUFBRSxDQUFDLENBQUMsVUFBVTtZQUNsRCxxQkFBVyxDQUFDLFFBQVEsQ0FBQyxZQUFZLEVBQUUsQ0FBQyxDQUFDLFVBQVU7WUFDL0MscUJBQVcsQ0FBQyxRQUFRLENBQUMsV0FBVyxFQUFFLENBQUMsQ0FBQyxVQUFVO1lBQzlDLHFCQUFXLENBQUMsUUFBUSxDQUFDLFdBQVcsRUFBRSxDQUFDLENBQUMsVUFBVTtZQUM5QyxJQUFJLENBQUMsV0FBVyxDQUFDLFVBQVUsQ0FBQyxTQUFTLENBQUMsS0FBSyxDQUFDLENBQUM7UUFDakQsQ0FBQyxDQUFDLENBQUM7UUFFSCxJQUFJLENBQUMsV0FBVyxDQUFDLFVBQVUsQ0FBQyxTQUFTLENBQUMsS0FBSyxDQUFDLENBQUM7UUFFN0MsSUFBSSxDQUFDLFNBQVMsR0FBRyxNQUFNLENBQUMsUUFBUSxDQUFDLENBQUMsQ0FBQyxDQUFDO1FBQ3BDLElBQUksQ0FBQyxTQUFTLENBQUMsVUFBVSxDQUFDLFNBQVMsQ0FBQyxLQUFLLENBQUMsQ0FBQztRQUUzQyxJQUFJLENBQUMsU0FBUyxHQUFHLE1BQU0sQ0FBQyxRQUFRLENBQUMsQ0FBQyxDQUFDLENBQUM7UUFDcEMsSUFBSSxDQUFDLFNBQVMsQ0FBQyxVQUFVLENBQUMsU0FBUyxDQUFDLEtBQUssQ0FBQyxDQUFDO1FBRTNDLFFBQVE7UUFDUixJQUFJLENBQUMsU0FB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\",\"assetPath\":\"Assets/ZepetoScripts/UIManager.ts\",\"manifest\":{\"properties\":[{\"assembly\":\"UnityEngine.CoreModule\",\"name\":\"canvasObj\",\"type\":\"UnityEngine.GameObject\",\"isArray\":false,\"initValue\":[],\"enumKeys\":[],\"enumValues\":[],\"attributes\":[]},{\"assembly\":\"UnityEngine.CoreModule\",\"name\":\"loadingUI\",\"type\":\"UnityEngine.Transform\",\"isArray\":false,\"initValue\":[],\"enumKeys\":[],\"enumValues\":[],\"attributes\":[]},{\"assembly\":\"UnityEngine.CoreModule\",\"name\":\"loadingUI_lake\",\"type\":\"UnityEngine.Transform\",\"isArray\":false,\"initValue\":[],\"enumKeys\":[],\"enumValues\":[],\"attributes\":[]},{\"assembly\":\"mscorlib\",\"name\":\"isPopupOn\",\"type\":\"System.Boolean\",\"isArray\":false,\"initValue\":[],\"enumKeys\":[],\"enumValues\":[],\"attributes\":[]},{\"assembly\":\"UnityEngine.CoreModule\",\"name\":\"RideDownBtn\",\"type\":\"UnityEngine.Transform\",\"isArray\":false,\"initValue\":[],\"enumKeys\":[],\"enumValues\":[],\"attributes\":[]},{\"assembly\":\"UnityEngine.CoreModule\",\"name\":\"bokCntImg\",\"type\":\"UnityEngine.Transform\",\"isArray\":false,\"initValue\":[],\"enumKeys\":[],\"enumValues\":[],\"attributes\":[]},{\"assembly\":\"UnityEngine.CoreModule\",\"name\":\"DeaCntImg\",\"type\":\"UnityEngine.Transform\",\"isArray\":false,\"initValue\":[],\"enumKeys\":[],\"enumValues\":[],\"attributes\":[]}],\"name\":\"UIManager\",\"description\":\"\"},\"isCompiled\":true}"
+  typescriptHash: 1fe8c645b10b73d0b224054590f8c6bd
+  onlyWriteTrigger: 0
