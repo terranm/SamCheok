@@ -1,0 +1,371 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -340528575, guid: 921f0445823004a16a499d629dd566a6, type: 3}
+  m_Name: __TEMP_MANIFEST__
+  m_EditorClassIdentifier: 
+  manifestVersion: 2020.8.15
+  unityVersion: 2020.3.9f1
+  identifier: com.samcheok.secretforest
+  version: 0.1
+  scenes:
+  - Assets/Scenes/SamCheok.unity
+  scripts:
+  - Assets/Scripts/Managers/ZepetoAnalytics.ts
+  - Assets/ZepetoScripts/AudioChangeTrigger.ts
+  - Assets/ZepetoScripts/BtnOnOffTrigger.ts
+  - Assets/ZepetoScripts/ButterflyMove.ts
+  - Assets/ZepetoScripts/ButtonLootat.ts
+  - Assets/ZepetoScripts/CameraClamp.ts
+  - Assets/ZepetoScripts/CameraController.ts
+  - Assets/ZepetoScripts/Deokbong_Move.ts
+  - Assets/ZepetoScripts/GameManager.ts
+  - Assets/ZepetoScripts/InPopup.ts
+  - Assets/ZepetoScripts/JoystickDir.ts
+  - Assets/ZepetoScripts/KayakCtrl.ts
+  - Assets/ZepetoScripts/Multiplay/ClientStarter.ts
+  - Assets/ZepetoScripts/PlayGayaCheck.ts
+  - Assets/ZepetoScripts/ResourceManager.ts
+  - Assets/ZepetoScripts/ScreenShotScripts/GestureController.ts
+  - Assets/ZepetoScripts/ScreenShotScripts/IKController.ts
+  - Assets/ZepetoScripts/ScreenShotScripts/PlayerCreator.ts
+  - Assets/ZepetoScripts/ScreenShotScripts/ScreenShotController.ts
+  - Assets/ZepetoScripts/ScreenShotScripts/ScreenShotModeManager.ts
+  - Assets/ZepetoScripts/ScreenShotScripts/SelfieCamera.ts
+  - Assets/ZepetoScripts/ScreenShotScripts/UIController.ts
+  - Assets/ZepetoScripts/Teleport.ts
+  - Assets/ZepetoScripts/UIAudioSourceManager.ts
+  - Assets/ZepetoScripts/UIManager.ts
+  - Packages/zepeto.world/Editor/Builds/QRCode.js
+  - Packages/zepeto.character.controller/Runtime/Scripts/JS/Classes/ZepetoDefaultInputReceiver.js
+  assets:
+  - Packages/zepeto.character.controller/Runtime/_Resources/Animations/UI/Controller/touchpad_handle_origin_ziggle.anim
+  - Packages/zepeto.character.controller/Runtime/_Resources/Animations/UI/Controller/touchpad_handle_off.anim
+  - Assets/New Folder/Samcheok City Hall_ver1019.fbx
+  - Packages/zepeto.character.controller/Runtime/_Resources/InputActions/ZepetoInputControl.inputactions
+  - Assets/1108 minzzing/gan.fbx
+  - Assets/Res/3 Texture/green.png
+  - "Assets/Res/Image/Popup/5)\uAE30\uD0C0UI/\uD018\uC2A4\uD2B8\uC644\uB8CC_\uC544\uC774\uCF58.png"
+  - Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/V2/landing_slight.anim
+  - Assets/1108 minzzing/suro_cloth_col.png
+  - Assets/Res/3 Texture/sub_water 1.jpg
+  - Assets/1108 minzzing/dragon.png
+  - Assets/1108 minzzing/tree_y.png
+  - Assets/Res/6 Anim/Gesture_image/image_005_blue.png
+  - Assets/Res/6 Anim/Gesture_image/image_001_blue.png
+  - Assets/Res/1 Model/horse.fbx
+  - Assets/Res/6 Anim/Animation/Ani_kayak_02.fbx
+  - Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/walk.anim
+  - Assets/1108 minzzing/suroFace.mat
+  - "Assets/Res/Image/Popup/1212 \uB85C\uB529\uC774\uBBF8\uC9C0.png"
+  - "Assets/Res/Audio/3.\uD574\uBCC0\uACF5\uC6D0/Rex Banner - Greengrass.mp3"
+  - Assets/Res/5 FBX/Deokbong/Deokbong_walk_Ani_02.fbx
+  - Assets/Res/1 Model/blue pinwheel.fbx
+  - "Assets/Res/Image/Popup/1)\uBE44\uBC00\uC758\uC232/\uBE44\uBC00\uC758\uC232_\uBBF8\uC1584(\uC601\uC5B4\uD3EC\uD568).png"
+  - "Assets/Res/Audio/\uC0BC\uCC99\uC2DC\uCCAD_\uD6A8\uACFC\uC74C/\uC218\uB85C\uBD80\uC778/323184__alivvie__hai-hai.mp3"
+  - Assets/Res/2 Material/Plainring.mat
+  - Assets/Model/Effect/portal/other_m.mat
+  - "Assets/Res/Image/Popup/2)\uB300\uB098\uBB34\uC232/\uB300\uB098\uBB34\uBAA8\uC73C\uAE30_\uC54C\uB9BC(\uC601\uC5B4\uD3EC\uD568).png"
+  - Assets/_Resources/[ScriptsShader]/resources-internal/StandardNoColor.shader
+  - Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/jump_move.anim
+  - Assets/1108 minzzing/New Animator Controller 7.controller
+  - Packages/zepeto.character.controller/Runtime/_Resources/Prefabs/UIController_Touchpad_Horizontal.prefab
+  - Assets/Res/6 Anim/Animation/dream_chair_ani02.fbx
+  - Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/V2/landing_roll.anim
+  - Assets/Model/portal.prefab
+  - Assets/Res/6 Anim/animation_Gesture/ani_picture pose04_hold.fbx
+  - Assets/1108 minzzing/CBS_Sakura_wood.png
+  - Assets/Res/2 Material/New Material.mat
+  - Assets/Res/5 FBX/Deokbong/NPC_Deokbong_look_around_Ani_02.controller
+  - Packages/zepeto.character.controller/Runtime/_Resources/Prefabs/UIController_Touchpad_Vertical.prefab
+  - Packages/com.unity.inputsystem/InputSystem/Editor/Icons/InputSystemUIInputModule@64.png
+  - Assets/Res/5 FBX/dokkaebi/dokkaebi_Holding_Idie_Ani.fbx
+  - Assets/Model/material/Camping_ground_sky_night 1.mat
+  - "Assets/Res/Image/Popup/3)\uD5CC\uD654\uACF5\uC6D0/\uC218\uB85C\uBD80\uC778\uAD6C\uD558\uAE30(\uC644\uB8CC)_\uC54C\uB9BC(\uC601\uC5B4\uD3EC\uD568).png"
+  - Assets/1108 minzzing/tree_g.png
+  - Assets/Res/5 FBX/Deokbong/COLOR-0.mat
+  - Assets/Res/6 Anim/animation_Gesture/ani_picture_pose06_heart_hold.fbx
+  - Assets/1108 minzzing/pap.fbx
+  - Assets/Res/1 Model/parasol.fbx
+  - Assets/Res/5 FBX/Deokbong/NPC_Deokbong_Hi_Ani_02.controller
+  - Assets/Res/2 Material/water.mat
+  - "Assets/Res/Audio/\uC0BC\uCC99\uC2DC\uCCAD_\uD6A8\uACFC\uC74C/\uB355\uBD09\uC774/264828__cmdrobot__text-message-or-videogame-jump.ogg"
+  - Assets/Model/Effect/portal/bomb.png
+  - Assets/1108 minzzing/butterfly_B_Ani.fbx
+  - Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/V2/jump_move.anim
+  - Assets/Res/1 Model/red pinwheel.fbx
+  - Assets/Res/5 FBX/dokkaebi/New Material.mat
+  - Assets/_Resources/[ScriptsShader]/resources-internal/TonemappingLUT.png
+  - "Assets/Res/Image/Popup/1)\uBE44\uBC00\uC758\uC232/\uBE44\uBC00\uC758\uC232_\uBBF8\uC1583(\uC601\uC5B4\uD3EC\uD568).png"
+  - Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/gesture.anim
+  - Packages/zepeto.character.controller/Runtime/_Resources/AnimatorController/ZepetoAnimator.controller
+  - "Assets/Res/Image/Popup/5)\uAE30\uD0C0UI/3\uC778\uCE6D \uBCF5\uC0AC.png"
+  - Assets/Res/6 Anim/animation_Gesture/ani_picture pose02_hold.fbx
+  - Assets/1108 minzzing/zepeto_colorchart_1320.mat
+  - Assets/Res/2 Material/Green_dark.mat
+  - "Assets/Res/Image/Popup/4)\uBC84\uD2BC/\uC7A0\uAE08_\uC544\uC774\uCF58.png"
+  - Assets/Res/6 Anim/Animator/ZepetoAnimatorV2.controller
+  - Assets/Res/0 Prefeb/Button.prefab
+  - Assets/1108 minzzing/tree_r.png
+  - Assets/Scenes/SamCheok/OcclusionCullingData.asset
+  - Assets/Prefabs/ZepetoAnalytics.prefab
+  - Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/idle.anim
+  - Assets/Res/6 Anim/Animation/Ani_gayageum.fbx
+  - "Assets/Res/Audio/2.\uBE44\uBC00\uC758\uC232/02/Hot Rod Elegants - Forest Water.mp3"
+  - Assets/Res/1 Model/two dong ja.fbx
+  - "Assets/Res/Audio/\uC0BC\uCC99\uC2DC\uCCAD_\uD6A8\uACFC\uC74C/\uB3C4\uAE68\uBE44/323701__reitanna__hello.wav"
+  - Assets/Res/0 Prefeb/Camera.prefab
+  - "Assets/Res/Image/Popup/1)\uBE44\uBC00\uC758\uC232/\uBCF5\uC8FC\uBA38\uB2C8_\uC644\uB8CC(\uC601\uC5B4\uD3EC\uD568).png"
+  - "Assets/Res/Image/Popup/5)\uAE30\uD0C0UI/\uC0C1\uB2E8 \uC2A4\uD06C\uB864 \uD31D\uC5C5
+    1.png"
+  - "Assets/Res/Audio/3.\uD574\uBCC0\uACF5\uC6D0/04timbales.mp3"
+  - Assets/1108 minzzing/Samcheok City Hall_ver1019 1.fbx
+  - Assets/Res/2 Material/Cylinder.050.mesh
+  - Assets/1108 minzzing/tree r.mat
+  - Assets/1108 minzzing/surocolth.mat
+  - "Assets/Res/Image/Popup/4)\uBC84\uD2BC/\uD654\uC0B4\uD45C.png"
+  - Assets/Res/1 Model/yellow pinwheel.fbx
+  - Assets/Model/Effect/fireflys/firework_circle.png
+  - Assets/1108 minzzing/dragon.mat
+  - Packages/zepeto.character.controller/Runtime/_Resources/AnimatorController/ZepetoAnimatorV2.controller
+  - Assets/Res/5 FBX/dokkaebi/Dok_Around.controller
+  - Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/V2/move_run_fast.anim
+  - Assets/Model/material/texture/Star_01.png
+  - Assets/Res/2 Material/Cylinder.050 (1).prefab
+  - Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/V2/move_turn.anim
+  - Assets/Res/1 Model/zzin glass tree.fbx
+  - Assets/Res/1 Model/gayageum_mod.fbx
+  - Assets/Model/material/texture/Star_02.png
+  - "Assets/Res/Image/Popup/5)\uAE30\uD0C0UI/\uBCF5\uC8FC\uBA38\uB2C8.png"
+  - Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/V2/move_run.anim
+  - Assets/1108 minzzing/New Animator Controller 6.controller
+  - Assets/Res/5 FBX/dokkaebi/dokkaebi_HI_Ani.fbx
+  - Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/jump_idle.anim
+  - "Assets/Res/Image/Popup/3)\uD5CC\uD654\uACF5\uC6D0/\uD574\uBCC0\uACF5\uC6D0_\uBBF8\uC1582(\uC601\uC5B4\uD3EC\uD568).png"
+  - Packages/zepeto.character.controller/Runtime/_Resources/Animations/UI/Controller/touchpad_handle_origin_off.anim
+  - Assets/1108 minzzing/suro_still_Ani.fbx
+  - Assets/1108 minzzing/surohair.mat
+  - Assets/Res/6 Anim/Animation/sunbed_lie_Ani.fbx
+  - Assets/Model/Effect/portal/other.png
+  - Assets/Res/4 Shader_code/water.shader
+  - Assets/Model/SkySphere.prefab
+  - Packages/zepeto.character.controller/Runtime/_Resources/Images/touchpad_handle_icon.png
+  - Assets/Res/6 Anim/Gesture_image/image_006_blue.png
+  - Assets/1108 minzzing/surocolth_sta.mat
+  - "Assets/Res/Image/Popup/2)\uB300\uB098\uBB34\uC232/\uC720\uB9AC\uB3D9\uAD74_\uBBF8\uC1583(\uC601\uC5B4\uD3EC\uD568).png"
+  - Packages/zepeto.character.controller/Runtime/_Resources/Images/touchpad_jump_icon.png
+  - "Assets/Res/Image/Popup/\uB85C\uB529.png"
+  - Assets/Model/Effect/portal/glow-(157)_2.png
+  - "Assets/Res/Image/Popup/5)\uAE30\uD0C0UI/1\uC778\uCE6D \uBCF5\uC0AC.png"
+  - "Assets/Res/Image/Popup/1)\uBE44\uBC00\uC758\uC232/\uC6D4\uB4DC\uC785\uC7A5(\uC601\uC5B4\uD3EC\uD568).png"
+  - Assets/1108 minzzing/butterfly_W_Ani.fbx
+  - Assets/1108 minzzing/suroFace_sta.mat
+  - Assets/Res/3 Texture/rainbow_toms3.png
+  - Assets/1108 minzzing/tree_o.png
+  - Assets/Model/Effect/fireflys/Materials/firework_circle.mat
+  - Assets/1108 minzzing/suro_hair_col.jpg
+  - Assets/1108 minzzing/suro_Body_col.png
+  - Assets/1108 minzzing/tree y.mat
+  - Assets/Res/5 FBX/Deokbong/NPC_Deokbong_still_Ani_02.fbx
+  - Assets/1108 minzzing/tree.mat
+  - Assets/Res/1 Model/rock.fbx
+  - Assets/Res/5 FBX/dokkaebi/Dok_Idle.controller
+  - Assets/Res/2 Material/caveRock_floor.mat
+  - Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/V2/jump_double.anim
+  - "Assets/Res/Image/Popup/1)\uBE44\uBC00\uC758\uC232/\uBE44\uBC00\uC758\uC232_\uBBF8\uC1582(\uC601\uC5B4\uD3EC\uD568).png"
+  - "Assets/Res/Image/Popup/4)\uBC84\uD2BC/\uC124\uC815_\uC544\uC774\uCF58.png"
+  - "Assets/Res/Image/Popup/3)\uD5CC\uD654\uACF5\uC6D0/\uD788\uB4E0\uC6D4\uB4DC(\uC601\uC5B4\uD3EC\uD568).png"
+  - Assets/Res/6 Anim/animation_Gesture/ani_picture pose03_hold.fbx
+  - Assets/Model/Particle System (37).prefab
+  - Assets/Res/2 Material/New Material 2.mat
+  - Packages/zepeto.character.controller/Runtime/_Resources/Images/touchpad_handle_base.png
+  - Assets/Res/2 Material/Green.mat
+  - Assets/Res/5 FBX/dokkaebi/dokkaebi_SHD_baseColor.jpg
+  - Assets/Res/4 Shader_code/Gradation.shader
+  - Assets/Model/3d_model/SkySphere.fbx
+  - Assets/Res/6 Anim/Gesture_image/image_gesture_ok_blue.png
+  - "Assets/Res/Image/Popup/5)\uAE30\uD0C0UI/on_\uBC84\uD2BC.png"
+  - Assets/Res/0 Prefeb/SkySphere.prefab
+  - Assets/Res/2 Material/sky_summer.png
+  - "Assets/Res/Image/Popup/4)\uBC84\uD2BC/X\uBC84\uD2BC.png"
+  - "Assets/Res/Image/Popup/2)\uB300\uB098\uBB34\uC232/\uC720\uB9AC\uB3D9\uAD74_\uBBF8\uC1582(\uC601\uC5B4\uD3EC\uD568).png"
+  - Assets/New Folder 2/zepetocolorchart_alpha.mat
+  - Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/action1.anim
+  - Assets/New Folder 2/New Material.mat
+  - "Assets/Res/Image/Popup/1)\uBE44\uBC00\uC758\uC232/\uBCF5\uC8FC\uBA38\uB2C8\uBAA8\uC73C\uAE30_\uC54C\uB9BC(\uC601\uC5B4\uD3EC\uD568).png"
+  - Assets/Res/2 Material/Sand.mat
+  - Assets/Res/2 Material/4e1186a347a6506522ab24ce4d8b351d.jpg
+  - "Assets/Res/Image/Popup/4)\uBC84\uD2BC/\uB2E4\uC74C\uBD80\uD130 \uBCF4\uC9C0
+    \uC54A\uAE30_\uBC84\uD2BC 1.png"
+  - "Assets/Res/Image/Popup/4)\uBC84\uD2BC/\uB0B4\uB9AC\uAE30_\uC544\uC774\uCF58.png"
+  - Packages/zepeto.character.controller/Runtime/_Resources/Animations/UI/Controller/touchpad_handle_ziggle.anim
+  - Packages/zepeto.character.controller/Runtime/_Resources/Animations/UI/Controller/touchpad_handle_on.anim
+  - "Assets/Res/Audio/\uC0BC\uCC99\uC2DC\uCCAD_\uD6A8\uACFC\uC74C/\uB355\uBD09\uC774/361927__robert-twent__hello.wav"
+  - Assets/Res/2 Material/rainbow 1.mat
+  - "Assets/Res/Audio/4.\uD574\uBCC0\uAC00/Francesco DAndrea - The Doubt (Part II).mp3"
+  - Assets/Res/6 Anim/Gesture_image/image_002_blue.png
+  - Packages/zepeto.character.controller/Runtime/_Resources/AnimatorController/UIControllerTouchpadHandleOrigin.controller
+  - Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/action2.anim
+  - "Assets/Res/Image/Popup/5)\uAE30\uD0C0UI/\uD018\uC2A4\uD2B8 \uD655\uC778.png"
+  - "Assets/Res/Image/Popup/4)\uBC84\uD2BC/\uC2E4\uD589_\uC544\uC774\uCF58.png"
+  - Assets/1108 minzzing/suro_dragon.fbx
+  - Packages/zepeto.character.controller/Runtime/_Resources/AnimatorController/UIControllerTouchpadHandle.controller
+  - "Assets/Res/Image/Popup/2)\uB300\uB098\uBB34\uC232/\uC720\uB9AC\uB3D9\uAD74_\uBBF8\uC1581(\uC601\uC5B4\uD3EC\uD568).png"
+  - Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/V2/jump_dash.anim
+  - Assets/Model/material/texture/moon.jpg
+  - Assets/Res/2 Material/Sky.mat
+  - Assets/1108 minzzing/tar.fbx
+  - Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/V2/move_walk_fast.anim
+  - Assets/Res/3 Texture/sand.jpg
+  - Packages/zepeto.character.controller/Runtime/_Resources/Prefabs/Shadow/CharacterShadow.prefab
+  - Assets/New Folder 1/zepeto_colorchart_1320.png
+  - "Assets/Res/Image/Popup/5)\uAE30\uD0C0UI/off_\uBC84\uD2BC.png"
+  - Packages/zepeto.character.controller/Runtime/_Resources/Images/touchpad_jump_base.png
+  - "Assets/Res/Image/Popup/3)\uD5CC\uD654\uACF5\uC6D0/\uD574\uBCC0\uACF5\uC6D0_\uBBF8\uC1583(\uC601\uC5B4\uD3EC\uD568).png"
+  - Assets/Res/5 FBX/Deokbong/NPC_Deokbong_Hi_Ani_02.fbx
+  - Packages/zepeto.character.controller/Runtime/_Resources/Animations/Gesture/6_dance.anim
+  - Assets/1108 minzzing/New Animator Controller 8.controller
+  - Assets/Res/6 Anim/Gesture_image/image_gesture_dance_blue.png
+  - Packages/zepeto.character.controller/Runtime/_Resources/Animations/UI/Controller/touchpad_handle_origin_on.anim
+  - Assets/1108 minzzing/car.fbx
+  - "Assets/Res/Image/Popup/3)\uD5CC\uD654\uACF5\uC6D0/\uD574\uBCC0\uACF5\uC6D0_\uBBF8\uC1581(\uC601\uC5B4\uD3EC\uD568).png"
+  - Assets/Res/5 FBX/dokkaebi/dokkaebi_Looking_Around_Ani.fbx
+  - "Assets/Res/Image/Popup/1)\uBE44\uBC00\uC758\uC232/\uBE44\uBC00\uC758\uC232_\uBBF8\uC1581(\uC601\uC5B4\uD3EC\uD568).png"
+  - Assets/Res/2 Material/caveRock_metal_cristal.mat
+  - Assets/Res/6 Anim/Animation/Ani_Tap_02.fbx
+  - Assets/Res/4 Shader_code/rainbow_shadow.shader
+  - "Assets/1108 minzzing/\uAE00_Material _25_BaseColor.png"
+  - "Assets/Res/Image/Popup/2)\uB300\uB098\uBB34\uC232/\uBE44\uBC00\uC758 \uC232(\uC601\uC5B4\uD3EC\uD568).png"
+  - Assets/Res/1 Model/vio pinwheel.fbx
+  - Assets/Res/1 Model/kayak_mod.fbx
+  - Assets/Res/2 Material/caveRock_Wall.mat
+  - "Assets/Res/Image/Popup/5)\uAE30\uD0C0UI/\uC124\uC815\uCC3D 1.png"
+  - "Assets/Res/Image/Popup/2)\uB300\uB098\uBB34\uC232/\uB300\uB098\uBB34_\uC644\uB8CC(\uC601\uC5B4\uD3EC\uD568).png"
+  - Assets/1108 minzzing/dragonbottom.mat
+  - Assets/Res/6 Anim/Gesture_image/image_gesture_sleep_blue.png
+  - Assets/Res/5 FBX/Deokbong/Deokbong_walk_Ani_02.controller
+  - Packages/zepeto.character.controller/Runtime/_Resources/Prefabs/Shadow/FxT_BlobShadow.png
+  - Assets/Res/1 Model/baby duk bong.fbx
+  - Assets/Res/2 Material/UnderWater.mat
+  - Packages/zepeto.character.controller/Runtime/_Resources/Animations/Gesture/4_ok.anim
+  - Assets/1108 minzzing/tree_g.fbx
+  - Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/V2/landing_deep.anim
+  - Assets/Res/2 Material/forestTree_dark.mat
+  - Assets/_Resources/[Materials]/ColorTexture_001.mat
+  - Assets/Res/2 Material/water 1.mat
+  - Assets/New Lighting Settings.lighting
+  - "Assets/Res/Image/Popup/4)\uBC84\uD2BC/\uBC30\uB0AD_\uC544\uC774\uCF58.png"
+  - Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/V2/Falling.anim
+  - Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/V2/jump_Idle.anim
+  - Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/V2/Stamp.anim
+  - Assets/1108 minzzing/tree o.mat
+  - Packages/zepeto.character.controller/Runtime/_Resources/Animations/Gesture/5_sleep.anim
+  - Assets/1108 minzzing/New Animator Controller 5.controller
+  - Assets/Res/6 Anim/Gesture_image/image_004_blue.png
+  - Assets/Res/1 Model/SkySphere.fbx
+  - Assets/Res/5 FBX/dokkaebi/Dok_Hi.controller
+  - Assets/Res/6 Anim/animation_Gesture/ani_picture pose01_hold.fbx
+  - "Assets/Res/Audio/1.\uB9C8\uC744/Sebastian Pangal - Preserve in Community.mp3"
+  - "Assets/Res/Image/Popup/5)\uAE30\uD0C0UI/\uB300\uB098\uBB34.png"
+  - Assets/1108 minzzing/tree g.mat
+  - Assets/Res/1 Model/poezifan.fbx
+  - Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/run.anim
+  - "Assets/Res/Image/Popup/4)\uBC84\uD2BC/\uB290\uB08C\uD45C.png"
+  - Assets/1108 minzzing/gzz.fbx
+  - "Assets/Res/Audio/2-1.\uB300\uB098\uBB34\uC232/Liquid Memoirs - Bittersweet Nightmare.mp3"
+  - Assets/_Resources/[Materials]/Texture/ColorTexture_001.png
+  - Assets/1108 minzzing/butterfly_Y_Ani.fbx
+  - Assets/1108 minzzing/dragon_bottom.png
+  - Assets/1108 minzzing/New Animator Controller 4.controller
+  - Assets/Res/3 Texture/water 1.png
+  - Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/V2/move_walk.anim
+  - Assets/Model/shader_code/moon.shader
+  - Assets/Model/Effect/portal/smoke_m.mat
+  - "Assets/Res/Audio/2-2.\uC720\uB9AC\uB3D9\uAD74/Nobou - The Beginning.mp3"
+  - Packages/zepeto.character.controller/Runtime/_Resources/Prefabs/Shadow/FxT_BlobShadow.mat
+  - Packages/zepeto.character.controller/Runtime/_Resources/Prefabs/EventSystem.prefab
+  - Assets/1108 minzzing/suro_Hi_Ani.fbx
+  - Assets/Res/5 FBX/Deokbong/NPC_Deokbong_look_around_Ani_02.fbx
+  - Assets/1108 minzzing/zepeto_colorchart_1320 1.mat
+  - Assets/1108 minzzing/suba.fbx
+  - Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/fall_end.anim
+  - "Assets/Res/Image/Popup/3)\uD5CC\uD654\uACF5\uC6D0/\uC218\uB85C\uBD80\uC778\uAD6C\uD558\uAE30(\uB450\uB4DC\uB9AC\uAE30)_\uC54C\uB9BC(\uC601\uC5B4\uD3EC\uD568).png"
+  - Assets/1108 minzzing/gora.fbx
+  - Assets/Res/6 Anim/Gesture_image/image_003_blue.png
+  - Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/V2/idle.anim
+  - Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/hand_idle_01.anim
+  - Packages/com.unity.inputsystem/InputSystem/Plugins/PlayerInput/DefaultInputActions.inputactions
+  - Assets/Res/6 Anim/animation_Gesture/ani_picture pose05_hold.fbx
+  - Assets/Model/Effect/portal/shock_Wave.mat
+  - "Assets/Res/Audio/\uC0BC\uCC99\uC2DC\uCCAD_\uD6A8\uACFC\uC74C/\uB355\uBD09\uC774/534715__owstu__bye-bye.wav"
+  - Assets/Res/2 Material/forestRock_dark 1.mat
+  resources:
+  - Assets/Resources
+  streamingAssets: []
+  tags: []
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - envi
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - Player
+  - 
+  - Button
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  packages:
+  - com.unity.ext.nunit@1.0.6
+  - zepeto.analytics@0.0.1-preview.0
+  - zepeto.buildit.loader@0.0.3
+  - zepeto.world@1.9.0
+  - zepeto.world.common@1.0.1
+  - zepeto.world.shared@1.5.0
+  - zepeto.script@1.6.0
+  - zepeto.multiplay@1.5.0
+  - zepeto.multiplay.script@1.5.0
+  - zepeto.chat@0.0.1
+  - zepeto.character@3.1.13
+  - zepeto.character.controller@1.4.1
+  - zepeto.script.unityengine.typings@1.0.5
+  - zepeto.iwp@1.2.1
+  - zepeto.script.leaderboard@1.1.6
+  - zepeto.asset@1.0.11
+  collisionLayers: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+  qualitySettings:
+  - '{"pixelLightCount":4,"shadows":2,"shadowResolution":2,"shadowProjection":1,"shadowCascades":4,"shadowDistance":150.0,"shadowNearPlaneOffset":3.0,"shadowCascade2Split":0.3333333432674408,"shadowCascade4Split":{"x":0.06666667014360428,"y":0.20000000298023225,"z":0.46666666865348818},"shadowmaskMode":1,"antiAliasing":2,"softParticles":true,"softVegetation":true,"realtimeReflectionProbes":true,"billboardsFaceCameraPosition":true,"lodBias":2.0,"maximumLODLevel":0,"streamingMipmapsActive":false,"streamingMipmapsAddAllCameras":true,"streamingMipmapsMemoryBudget":512.0,"streamingMipmapsRenderersPerFrame":512,"streamingMipmapsMaxLevelReduction":2,"streamingMipmapsMaxFileIORequests":1024,"particleRaycastBudget":4096,"asyncUploadTimeSlice":2,"asyncUploadBufferSize":16,"asyncUploadPersistentBuffer":true,"resolutionScalingFixedDPIFactor":1.0}'
+  - '{"pixelLightCount":0,"shadows":0,"shadowResolution":0,"shadowProjection":1,"shadowCascades":1,"shadowDistance":15.0,"shadowNearPlaneOffset":3.0,"shadowCascade2Split":0.3333333432674408,"shadowCascade4Split":{"x":0.06666667014360428,"y":0.20000000298023225,"z":0.46666666865348818},"shadowmaskMode":0,"antiAliasing":0,"softParticles":false,"softVegetation":false,"realtimeReflectionProbes":false,"billboardsFaceCameraPosition":false,"lodBias":0.30000001192092898,"maximumLODLevel":0,"streamingMipmapsActive":false,"streamingMipmapsAddAllCameras":true,"streamingMipmapsMemoryBudget":512.0,"streamingMipmapsRenderersPerFrame":512,"streamingMipmapsMaxLevelReduction":2,"streamingMipmapsMaxFileIORequests":1024,"particleRaycastBudget":4,"asyncUploadTimeSlice":2,"asyncUploadBufferSize":16,"asyncUploadPersistentBuffer":true,"resolutionScalingFixedDPIFactor":1.0}'
+  - '{"pixelLightCount":0,"shadows":0,"shadowResolution":0,"shadowProjection":1,"shadowCascades":1,"shadowDistance":15.0,"shadowNearPlaneOffset":3.0,"shadowCascade2Split":0.3333333432674408,"shadowCascade4Split":{"x":0.06666667014360428,"y":0.20000000298023225,"z":0.46666666865348818},"shadowmaskMode":0,"antiAliasing":0,"softParticles":false,"softVegetation":false,"realtimeReflectionProbes":false,"billboardsFaceCameraPosition":false,"lodBias":0.30000001192092898,"maximumLODLevel":0,"streamingMipmapsActive":false,"streamingMipmapsAddAllCameras":true,"streamingMipmapsMemoryBudget":512.0,"streamingMipmapsRenderersPerFrame":512,"streamingMipmapsMaxLevelReduction":2,"streamingMipmapsMaxFileIORequests":1024,"particleRaycastBudget":4,"asyncUploadTimeSlice":2,"asyncUploadBufferSize":16,"asyncUploadPersistentBuffer":true,"resolutionScalingFixedDPIFactor":1.0}'
+  - '{"pixelLightCount":4,"shadows":2,"shadowResolution":2,"shadowProjection":1,"shadowCascades":4,"shadowDistance":150.0,"shadowNearPlaneOffset":3.0,"shadowCascade2Split":0.3333333432674408,"shadowCascade4Split":{"x":0.06666667014360428,"y":0.20000000298023225,"z":0.46666666865348818},"shadowmaskMode":1,"antiAliasing":2,"softParticles":true,"softVegetation":true,"realtimeReflectionProbes":true,"billboardsFaceCameraPosition":true,"lodBias":2.0,"maximumLODLevel":0,"streamingMipmapsActive":false,"streamingMipmapsAddAllCameras":true,"streamingMipmapsMemoryBudget":512.0,"streamingMipmapsRenderersPerFrame":512,"streamingMipmapsMaxLevelReduction":2,"streamingMipmapsMaxFileIORequests":1024,"particleRaycastBudget":4096,"asyncUploadTimeSlice":2,"asyncUploadBufferSize":16,"asyncUploadPersistentBuffer":true,"resolutionScalingFixedDPIFactor":1.0}'
+  - '{"pixelLightCount":4,"shadows":2,"shadowResolution":2,"shadowProjection":1,"shadowCascades":4,"shadowDistance":150.0,"shadowNearPlaneOffset":3.0,"shadowCascade2Split":0.3333333432674408,"shadowCascade4Split":{"x":0.06666667014360428,"y":0.20000000298023225,"z":0.46666666865348818},"shadowmaskMode":1,"antiAliasing":2,"softParticles":true,"softVegetation":true,"realtimeReflectionProbes":true,"billboardsFaceCameraPosition":true,"lodBias":2.0,"maximumLODLevel":0,"streamingMipmapsActive":false,"streamingMipmapsAddAllCameras":true,"streamingMipmapsMemoryBudget":512.0,"streamingMipmapsRenderersPerFrame":512,"streamingMipmapsMaxLevelReduction":2,"streamingMipmapsMaxFileIORequests":1024,"particleRaycastBudget":4096,"asyncUploadTimeSlice":2,"asyncUploadBufferSize":16,"asyncUploadPersistentBuffer":true,"resolutionScalingFixedDPIFactor":1.0}'
+  - '{"pixelLightCount":4,"shadows":2,"shadowResolution":2,"shadowProjection":1,"shadowCascades":4,"shadowDistance":150.0,"shadowNearPlaneOffset":3.0,"shadowCascade2Split":0.3333333432674408,"shadowCascade4Split":{"x":0.06666667014360428,"y":0.20000000298023225,"z":0.46666666865348818},"shadowmaskMode":1,"antiAliasing":2,"softParticles":true,"softVegetation":true,"realtimeReflectionProbes":true,"billboardsFaceCameraPosition":true,"lodBias":2.0,"maximumLODLevel":0,"streamingMipmapsActive":false,"streamingMipmapsAddAllCameras":true,"streamingMipmapsMemoryBudget":512.0,"streamingMipmapsRenderersPerFrame":512,"streamingMipmapsMaxLevelReduction":2,"streamingMipmapsMaxFileIORequests":1024,"particleRaycastBudget":4096,"asyncUploadTimeSlice":2,"asyncUploadBufferSize":16,"asyncUploadPersistentBuffer":true,"resolutionScalingFixedDPIFactor":1.0}'
+  extensions: []

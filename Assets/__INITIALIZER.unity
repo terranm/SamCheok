@@ -1,0 +1,710 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1652157745
+GameObject: 
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1652157747}
+  - component: {fileID: 1652157746}
+  m_Name: ZepetoScriptContextInitializerComponent
+  m_IsActive: 1
+--- !u!114 &1652157746
+MonoBehaviour:  
+  m_GameObject: {fileID: 1652157745}
+  m_Enabled: 1
+  m_Script: {fileID: -820289043, guid: 921f0445823004a16a499d629dd566a6, type: 3}   
+  initializer: {fileID: 817983362}
+--- !u!4 &1652157747
+Transform:
+  m_GameObject: {fileID: 1652157745}
+--- !u!114 &817983362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 2046837767, guid: 921f0445823004a16a499d629dd566a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  assetBundle: {fileID: 0}
+  assets:
+  - assetPath: __STREAMINGASSETS
+    asset: {fileID: 0}
+  - assetPath: Assets/Scripts/Managers/ZepetoAnalytics.ts
+    asset: {fileID: 4458252877524076426, guid: e46aab335ca1eb34eb02e46e3635bdde, type: 3}
+  - assetPath: Assets/ZepetoScripts/AudioChangeTrigger.ts
+    asset: {fileID: 4458252877524076426, guid: 289ed26f66bea2d44b0b8f2040a17cb4, type: 3}
+  - assetPath: Assets/ZepetoScripts/BtnOnOffTrigger.ts
+    asset: {fileID: 4458252877524076426, guid: fc35661d3db50ed4badca2df1733cab9, type: 3}
+  - assetPath: Assets/ZepetoScripts/ButterflyMove.ts
+    asset: {fileID: 4458252877524076426, guid: 8f5b947947add1f46a0791da0c858e69, type: 3}
+  - assetPath: Assets/ZepetoScripts/ButtonLootat.ts
+    asset: {fileID: 4458252877524076426, guid: 94a5c5f5c6f169c4ca6f8429a22a7378, type: 3}
+  - assetPath: Assets/ZepetoScripts/CameraClamp.ts
+    asset: {fileID: 4458252877524076426, guid: e72760be663de5b47a430c7740850523, type: 3}
+  - assetPath: Assets/ZepetoScripts/CameraController.ts
+    asset: {fileID: 4458252877524076426, guid: 7db985adc9c7b3b4c832c4c05e9113b6, type: 3}
+  - assetPath: Assets/ZepetoScripts/Deokbong_Move.ts
+    asset: {fileID: 4458252877524076426, guid: baac3ad386c84a3418d71d3692d5548b, type: 3}
+  - assetPath: Assets/ZepetoScripts/GameManager.ts
+    asset: {fileID: 4458252877524076426, guid: 0fabc4d23cc098b4ba75a720f7f2de44, type: 3}
+  - assetPath: Assets/ZepetoScripts/InPopup.ts
+    asset: {fileID: 4458252877524076426, guid: 1d731450ebd7d594c81e22401c9427f4, type: 3}
+  - assetPath: Assets/ZepetoScripts/JoystickDir.ts
+    asset: {fileID: 4458252877524076426, guid: c8acbc4135f4702458e2a4ede6d7820f, type: 3}
+  - assetPath: Assets/ZepetoScripts/KayakCtrl.ts
+    asset: {fileID: 4458252877524076426, guid: 81af6814ec73bcf4b8885ea5ead1154a, type: 3}
+  - assetPath: Assets/ZepetoScripts/Multiplay/ClientStarter.ts
+    asset: {fileID: 4458252877524076426, guid: fb07876dbe0ca47bd8b0ac901bcb2066, type: 3}
+  - assetPath: Assets/ZepetoScripts/PlayGayaCheck.ts
+    asset: {fileID: 4458252877524076426, guid: 3ae9c762ff04a104c9b984dd90de11eb, type: 3}
+  - assetPath: Assets/ZepetoScripts/ResourceManager.ts
+    asset: {fileID: 4458252877524076426, guid: 0e6df91250849b74fb9634934412b458, type: 3}
+  - assetPath: Assets/ZepetoScripts/ScreenShotScripts/GestureController.ts
+    asset: {fileID: 4458252877524076426, guid: 68f0c6a528c2618438e5a6291abaea0c, type: 3}
+  - assetPath: Assets/ZepetoScripts/ScreenShotScripts/IKController.ts
+    asset: {fileID: 4458252877524076426, guid: e2fb2ea499cb545fea08a6739dd8333a, type: 3}
+  - assetPath: Assets/ZepetoScripts/ScreenShotScripts/PlayerCreator.ts
+    asset: {fileID: 4458252877524076426, guid: a9ac256edc37c8540b21382aa4f91c40, type: 3}
+  - assetPath: Assets/ZepetoScripts/ScreenShotScripts/ScreenShotController.ts
+    asset: {fileID: 4458252877524076426, guid: 4ad7232826783c34082a0b7c2afabfba, type: 3}
+  - assetPath: Assets/ZepetoScripts/ScreenShotScripts/ScreenShotModeManager.ts
+    asset: {fileID: 4458252877524076426, guid: 96d23dd00996d474ebe24a05a1a1a1a6, type: 3}
+  - assetPath: Assets/ZepetoScripts/ScreenShotScripts/SelfieCamera.ts
+    asset: {fileID: 4458252877524076426, guid: fdad88fc98cff244f9806efff8493b4e, type: 3}
+  - assetPath: Assets/ZepetoScripts/ScreenShotScripts/UIController.ts
+    asset: {fileID: 4458252877524076426, guid: 48432be9f833e8246b204afb0be42355, type: 3}
+  - assetPath: Assets/ZepetoScripts/Teleport.ts
+    asset: {fileID: 4458252877524076426, guid: 0ba194548b5c85542b6b2f74e4fbb2a3, type: 3}
+  - assetPath: Assets/ZepetoScripts/UIAudioSourceManager.ts
+    asset: {fileID: 4458252877524076426, guid: b166182129b2ee54dba065261b37dc9b, type: 3}
+  - assetPath: Assets/ZepetoScripts/UIManager.ts
+    asset: {fileID: 4458252877524076426, guid: 16df2a63ef9ee73468dddc767c394265, type: 3}
+  - assetPath: Packages/zepeto.world/Editor/Builds/QRCode.js
+    asset: {fileID: 4458252877524076426, guid: 17c98b61ae4046b5938df3de071ac4b9, type: 3}
+  - assetPath: Packages/zepeto.character.controller/Runtime/Scripts/JS/Classes/ZepetoDefaultInputReceiver.js
+    asset: {fileID: 4458252877524076426, guid: bd46341e375f8420d891e82dd4fcc030, type: 3}
+  - assetPath: Packages/zepeto.character.controller/Runtime/_Resources/Animations/UI/Controller/touchpad_handle_origin_ziggle.anim
+    asset: {fileID: 7400000, guid: 61185ec652c834c1e91f184f7348bc17, type: 2}
+  - assetPath: Packages/zepeto.character.controller/Runtime/_Resources/Animations/UI/Controller/touchpad_handle_off.anim
+    asset: {fileID: 7400000, guid: af3a092ab50b042dda8d55bf57df89e2, type: 2}
+  - assetPath: Assets/New Folder/Samcheok City Hall_ver1019.fbx
+    asset: {fileID: 919132149155446097, guid: 1839113ebf43f7f44a9bc315d9371de2, type: 3}
+  - assetPath: Packages/zepeto.character.controller/Runtime/_Resources/InputActions/ZepetoInputControl.inputactions
+    asset: {fileID: -944628639613478452, guid: 090135bc9e5ee4c89b1642240eb723fe, type: 3}
+  - assetPath: Assets/1108 minzzing/gan.fbx
+    asset: {fileID: 919132149155446097, guid: 9f45e2ba3832e5642b201acbe7382d6f, type: 3}
+  - assetPath: Assets/Res/3 Texture/green.png
+    asset: {fileID: 2800000, guid: 114119759449ca143a6e8c24f2d2b872, type: 3}
+  - assetPath: "Assets/Res/Image/Popup/5)\uAE30\uD0C0UI/\uD018\uC2A4\uD2B8\uC644\uB8CC_\uC544\uC774\uCF58.png"
+    asset: {fileID: 2800000, guid: e6e5206f537b8b044bfe3169a29d291e, type: 3}
+  - assetPath: Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/V2/landing_slight.anim
+    asset: {fileID: 7400000, guid: 34a1ea504fe4743649b7fda50421bed6, type: 2}
+  - assetPath: Assets/1108 minzzing/suro_cloth_col.png
+    asset: {fileID: 2800000, guid: 3a82433df87dc544c9486309a1795002, type: 3}
+  - assetPath: Assets/Res/3 Texture/sub_water 1.jpg
+    asset: {fileID: 2800000, guid: 726429b9023d22a4e8e15ac08c6aa5d0, type: 3}
+  - assetPath: Assets/1108 minzzing/dragon.png
+    asset: {fileID: 2800000, guid: 778634a599e520f49894ebc9d53c5108, type: 3}
+  - assetPath: Assets/1108 minzzing/tree_y.png
+    asset: {fileID: 2800000, guid: 3d497229a601bca4fa0ba0b9ab06db67, type: 3}
+  - assetPath: Assets/Res/6 Anim/Gesture_image/image_005_blue.png
+    asset: {fileID: 2800000, guid: dae302e3db5d0554085ab2e0676ac959, type: 3}
+  - assetPath: Assets/Res/6 Anim/Gesture_image/image_001_blue.png
+    asset: {fileID: 2800000, guid: ccd7c76858d766b4bbc4da1441eedbbb, type: 3}
+  - assetPath: Assets/Res/1 Model/horse.fbx
+    asset: {fileID: 919132149155446097, guid: 07f40818fb2fe63459328fff56716f4d, type: 3}
+  - assetPath: Assets/Res/6 Anim/Animation/Ani_kayak_02.fbx
+    asset: {fileID: 919132149155446097, guid: d3ab019035f8fb64fabad8f462b13622, type: 3}
+  - assetPath: Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/walk.anim
+    asset: {fileID: 7400000, guid: e81fd0a5991d041a592274fbfceff5f6, type: 2}
+  - assetPath: Assets/1108 minzzing/suroFace.mat
+    asset: {fileID: 2100000, guid: 3364ca124288c294d979e8a030a28468, type: 2}
+  - assetPath: "Assets/Res/Image/Popup/1212 \uB85C\uB529\uC774\uBBF8\uC9C0.png"
+    asset: {fileID: 2800000, guid: bafee208fd9cecd499646b21735dc639, type: 3}
+  - assetPath: "Assets/Res/Audio/3.\uD574\uBCC0\uACF5\uC6D0/Rex Banner - Greengrass.mp3"
+    asset: {fileID: 8300000, guid: 9a53933e471f72f448fede1df91bd32e, type: 3}
+  - assetPath: Assets/Res/5 FBX/Deokbong/Deokbong_walk_Ani_02.fbx
+    asset: {fileID: 919132149155446097, guid: 931f7e2b57166954b8d053a73257b2f6, type: 3}
+  - assetPath: Assets/Res/1 Model/blue pinwheel.fbx
+    asset: {fileID: 919132149155446097, guid: f264c1ae10b940847947d79528282222, type: 3}
+  - assetPath: "Assets/Res/Image/Popup/1)\uBE44\uBC00\uC758\uC232/\uBE44\uBC00\uC758\uC232_\uBBF8\uC1584(\uC601\uC5B4\uD3EC\uD568).png"
+    asset: {fileID: 2800000, guid: 89b12cbaeb43d374d9d9c744156ad407, type: 3}
+  - assetPath: "Assets/Res/Audio/\uC0BC\uCC99\uC2DC\uCCAD_\uD6A8\uACFC\uC74C/\uC218\uB85C\uBD80\uC778/323184__alivvie__hai-hai.mp3"
+    asset: {fileID: 8300000, guid: 5c8431a1c9786d5489a9f22640608256, type: 3}
+  - assetPath: Assets/Res/2 Material/Plainring.mat
+    asset: {fileID: 2100000, guid: 0103a43a2a48cd74ba80c769294d42b9, type: 2}
+  - assetPath: Assets/Model/Effect/portal/other_m.mat
+    asset: {fileID: 2100000, guid: 815acf3c3b498ad47bbd5cbe7e5aae59, type: 2}
+  - assetPath: "Assets/Res/Image/Popup/2)\uB300\uB098\uBB34\uC232/\uB300\uB098\uBB34\uBAA8\uC73C\uAE30_\uC54C\uB9BC(\uC601\uC5B4\uD3EC\uD568).png"
+    asset: {fileID: 2800000, guid: 6f3684b9c5a119c4394aebc305616594, type: 3}
+  - assetPath: Assets/_Resources/[ScriptsShader]/resources-internal/StandardNoColor.shader
+    asset: {fileID: 4800000, guid: 224f5d78d3b9c44a6863622fe9462df5, type: 3}
+  - assetPath: Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/jump_move.anim
+    asset: {fileID: 7400000, guid: ad9db15bb97a241d3941e089707ae455, type: 2}
+  - assetPath: Assets/1108 minzzing/New Animator Controller 7.controller
+    asset: {fileID: 9100000, guid: ccd0b319668c86142aca5c348ccd9e32, type: 2}
+  - assetPath: Packages/zepeto.character.controller/Runtime/_Resources/Prefabs/UIController_Touchpad_Horizontal.prefab
+    asset: {fileID: 2787167779785370926, guid: 9b7a03709461140b4b3fc85aa8c5d741, type: 3}
+  - assetPath: Assets/Res/6 Anim/Animation/dream_chair_ani02.fbx
+    asset: {fileID: 919132149155446097, guid: 62faaaf3db9d075408743e8ef2990f14, type: 3}
+  - assetPath: Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/V2/landing_roll.anim
+    asset: {fileID: 7400000, guid: aef7b16c4a1b74b95b6f56d4ce91a801, type: 2}
+  - assetPath: Assets/Model/portal.prefab
+    asset: {fileID: 7249839772675660849, guid: 403eb2f52c2a95341bba74c88908a2a5, type: 3}
+  - assetPath: Assets/Res/6 Anim/animation_Gesture/ani_picture pose04_hold.fbx
+    asset: {fileID: 919132149155446097, guid: 1c72dc5d7c19dda47a93a589a241ab93, type: 3}
+  - assetPath: Assets/1108 minzzing/CBS_Sakura_wood.png
+    asset: {fileID: 2800000, guid: 6d2616978c783934ea0ade7901f4dfaa, type: 3}
+  - assetPath: Assets/Res/2 Material/New Material.mat
+    asset: {fileID: 2100000, guid: 1306077f318bf5a499152eb402737110, type: 2}
+  - assetPath: Assets/Res/5 FBX/Deokbong/NPC_Deokbong_look_around_Ani_02.controller
+    asset: {fileID: 9100000, guid: 2f5f99c2f5534c7419987483a3786adb, type: 2}
+  - assetPath: Packages/zepeto.character.controller/Runtime/_Resources/Prefabs/UIController_Touchpad_Vertical.prefab
+    asset: {fileID: 8523051459139762370, guid: 33446b9369e354b00a7ab43885afbe88, type: 3}
+  - assetPath: Packages/com.unity.inputsystem/InputSystem/Editor/Icons/InputSystemUIInputModule@64.png
+    asset: {fileID: 2800000, guid: 3028dc075ba8c584d9bc7d1e0255e038, type: 3}
+  - assetPath: Assets/Res/5 FBX/dokkaebi/dokkaebi_Holding_Idie_Ani.fbx
+    asset: {fileID: 919132149155446097, guid: 012bf49c2c404ce448819f10b8eb0920, type: 3}
+  - assetPath: Assets/Model/material/Camping_ground_sky_night 1.mat
+    asset: {fileID: 2100000, guid: 1fa3709515a45b840b4547ce43303226, type: 2}
+  - assetPath: "Assets/Res/Image/Popup/3)\uD5CC\uD654\uACF5\uC6D0/\uC218\uB85C\uBD80\uC778\uAD6C\uD558\uAE30(\uC644\uB8CC)_\uC54C\uB9BC(\uC601\uC5B4\uD3EC\uD568).png"
+    asset: {fileID: 2800000, guid: c22f69949f00b4942ae6e0bb2c0bb78e, type: 3}
+  - assetPath: Assets/1108 minzzing/tree_g.png
+    asset: {fileID: 2800000, guid: f0584c01dadfe4a4387a6fa6ff79a850, type: 3}
+  - assetPath: Assets/Res/5 FBX/Deokbong/COLOR-0.mat
+    asset: {fileID: 2100000, guid: f7587383388c5794b8530831cc576276, type: 2}
+  - assetPath: Assets/Res/6 Anim/animation_Gesture/ani_picture_pose06_heart_hold.fbx
+    asset: {fileID: 919132149155446097, guid: d40733b4c7c2c4641ad6c3a5d735baa9, type: 3}
+  - assetPath: Assets/1108 minzzing/pap.fbx
+    asset: {fileID: 919132149155446097, guid: 46bbafc65fa064a49b3d07b392df07ba, type: 3}
+  - assetPath: Assets/Res/1 Model/parasol.fbx
+    asset: {fileID: 919132149155446097, guid: 134d99e7a31d90e458dd2e3b984d4448, type: 3}
+  - assetPath: Assets/Res/5 FBX/Deokbong/NPC_Deokbong_Hi_Ani_02.controller
+    asset: {fileID: 9100000, guid: 9f57b121dbd0aa24686bc182e344876e, type: 2}
+  - assetPath: Assets/Res/2 Material/water.mat
+    asset: {fileID: 2100000, guid: fb6892c855148aa4993c26e3a73ea3d2, type: 2}
+  - assetPath: "Assets/Res/Audio/\uC0BC\uCC99\uC2DC\uCCAD_\uD6A8\uACFC\uC74C/\uB355\uBD09\uC774/264828__cmdrobot__text-message-or-videogame-jump.ogg"
+    asset: {fileID: 8300000, guid: 1dda1c56ba9ec49498c2131afb1e4526, type: 3}
+  - assetPath: Assets/Model/Effect/portal/bomb.png
+    asset: {fileID: 2800000, guid: 70e346b9f8e726d4d8494475983d12c2, type: 3}
+  - assetPath: Assets/1108 minzzing/butterfly_B_Ani.fbx
+    asset: {fileID: 919132149155446097, guid: 6b20ac51fa3c9e549bdd50336a33e090, type: 3}
+  - assetPath: Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/V2/jump_move.anim
+    asset: {fileID: 7400000, guid: 4ca7e1aa057824010b3a4417e05f0b3e, type: 2}
+  - assetPath: Assets/Res/1 Model/red pinwheel.fbx
+    asset: {fileID: 919132149155446097, guid: 40d065a717eb205469066c866d698943, type: 3}
+  - assetPath: Assets/Res/5 FBX/dokkaebi/New Material.mat
+    asset: {fileID: 2100000, guid: 657a994bdd4bef546aa540a9887f33dd, type: 2}
+  - assetPath: Assets/_Resources/[ScriptsShader]/resources-internal/TonemappingLUT.png
+    asset: {fileID: 2800000, guid: 03ac8a3fe58c148deaeaedb6213c4167, type: 3}
+  - assetPath: "Assets/Res/Image/Popup/1)\uBE44\uBC00\uC758\uC232/\uBE44\uBC00\uC758\uC232_\uBBF8\uC1583(\uC601\uC5B4\uD3EC\uD568).png"
+    asset: {fileID: 2800000, guid: e7d95a8086d92824ba1c60b250619f85, type: 3}
+  - assetPath: Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/gesture.anim
+    asset: {fileID: 7400000, guid: 298460fd2a0fd41f79d81cfd93cb37e5, type: 2}
+  - assetPath: Packages/zepeto.character.controller/Runtime/_Resources/AnimatorController/ZepetoAnimator.controller
+    asset: {fileID: 9100000, guid: 019901d3486cc411abc6c84594c03743, type: 2}
+  - assetPath: "Assets/Res/Image/Popup/5)\uAE30\uD0C0UI/3\uC778\uCE6D \uBCF5\uC0AC.png"
+    asset: {fileID: 2800000, guid: 2f465aeca3fe02546b37a0eb375311e4, type: 3}
+  - assetPath: Assets/Res/6 Anim/animation_Gesture/ani_picture pose02_hold.fbx
+    asset: {fileID: 919132149155446097, guid: 989e1046bb00bfa4e8a66df2628a2892, type: 3}
+  - assetPath: Assets/1108 minzzing/zepeto_colorchart_1320.mat
+    asset: {fileID: 2100000, guid: 812bd481e89046248905f69b826d30e3, type: 2}
+  - assetPath: Assets/Res/2 Material/Green_dark.mat
+    asset: {fileID: 2100000, guid: 64bb40192fa1bcf4e853cb25d90f7db6, type: 2}
+  - assetPath: "Assets/Res/Image/Popup/4)\uBC84\uD2BC/\uC7A0\uAE08_\uC544\uC774\uCF58.png"
+    asset: {fileID: 2800000, guid: 74af63c9cc12e394aa84e854a6897c0c, type: 3}
+  - assetPath: Assets/Res/6 Anim/Animator/ZepetoAnimatorV2.controller
+    asset: {fileID: 9100000, guid: 03efadd1c135ec3438097e669d1e32b5, type: 2}
+  - assetPath: Assets/Res/0 Prefeb/Button.prefab
+    asset: {fileID: 6553780860643699681, guid: f4f2053536ae0144cb5c63824449f061, type: 3}
+  - assetPath: Assets/1108 minzzing/tree_r.png
+    asset: {fileID: 2800000, guid: bfe3bf8fdc4095842ab3993a1597387b, type: 3}
+  - assetPath: Assets/Scenes/SamCheok/OcclusionCullingData.asset
+    asset: {fileID: 36300000, guid: a2bee5816d78a9847806fdaa5c01a06e, type: 2}
+  - assetPath: Assets/Prefabs/ZepetoAnalytics.prefab
+    asset: {fileID: 623760165503242096, guid: 2f4d4dae8310f5048a8ea74f26514e9c, type: 3}
+  - assetPath: Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/idle.anim
+    asset: {fileID: 7400000, guid: 77b4b5d8cbed146578a40c13e9fb3e29, type: 2}
+  - assetPath: Assets/Res/6 Anim/Animation/Ani_gayageum.fbx
+    asset: {fileID: 919132149155446097, guid: 4f38ee7bd6629e840b06e0eb24fbaaba, type: 3}
+  - assetPath: "Assets/Res/Audio/2.\uBE44\uBC00\uC758\uC232/02/Hot Rod Elegants -
+      Forest Water.mp3"
+    asset: {fileID: 8300000, guid: bf1affcc4c26b0143b62bee8282f5bd5, type: 3}
+  - assetPath: Assets/Res/1 Model/two dong ja.fbx
+    asset: {fileID: 919132149155446097, guid: ccaced019789c264b8a0adefa965389f, type: 3}
+  - assetPath: "Assets/Res/Audio/\uC0BC\uCC99\uC2DC\uCCAD_\uD6A8\uACFC\uC74C/\uB3C4\uAE68\uBE44/323701__reitanna__hello.wav"
+    asset: {fileID: 8300000, guid: 0af9afe8fe78a8e47b77df5ec763b300, type: 3}
+  - assetPath: Assets/Res/0 Prefeb/Camera.prefab
+    asset: {fileID: 9142536254917297470, guid: 061830fbbe683304db1d1cfe8188ac6f, type: 3}
+  - assetPath: "Assets/Res/Image/Popup/1)\uBE44\uBC00\uC758\uC232/\uBCF5\uC8FC\uBA38\uB2C8_\uC644\uB8CC(\uC601\uC5B4\uD3EC\uD568).png"
+    asset: {fileID: 2800000, guid: 1cb5cd0db75dedb499f63030ce23e219, type: 3}
+  - assetPath: "Assets/Res/Image/Popup/5)\uAE30\uD0C0UI/\uC0C1\uB2E8 \uC2A4\uD06C\uB864
+      \uD31D\uC5C5 1.png"
+    asset: {fileID: 2800000, guid: 2475ebcc4c21d634a9b75ec7be134b18, type: 3}
+  - assetPath: "Assets/Res/Audio/3.\uD574\uBCC0\uACF5\uC6D0/04timbales.mp3"
+    asset: {fileID: 8300000, guid: be41c96a390eeee41b45580665addb05, type: 3}
+  - assetPath: Assets/1108 minzzing/Samcheok City Hall_ver1019 1.fbx
+    asset: {fileID: 919132149155446097, guid: 1d6821e32cbe97542884273ee92f4378, type: 3}
+  - assetPath: Assets/Res/2 Material/Cylinder.050.mesh
+    asset: {fileID: 4300000, guid: 569744547731e9746820dc5db4fd8721, type: 2}
+  - assetPath: Assets/1108 minzzing/tree r.mat
+    asset: {fileID: 2100000, guid: 88575f6356db509458b30b102d98c105, type: 2}
+  - assetPath: Assets/1108 minzzing/surocolth.mat
+    asset: {fileID: 2100000, guid: 891af27bde4170b499c7551a91d38d16, type: 2}
+  - assetPath: "Assets/Res/Image/Popup/4)\uBC84\uD2BC/\uD654\uC0B4\uD45C.png"
+    asset: {fileID: 2800000, guid: b142d2ec74961d14fa1659642dc0161b, type: 3}
+  - assetPath: Assets/Res/1 Model/yellow pinwheel.fbx
+    asset: {fileID: 919132149155446097, guid: 7e146e15c7454cd44b5c1d81e3dea09a, type: 3}
+  - assetPath: Assets/Model/Effect/fireflys/firework_circle.png
+    asset: {fileID: 2800000, guid: 0d89d69bf5436a24dacd624df65152e6, type: 3}
+  - assetPath: Assets/1108 minzzing/dragon.mat
+    asset: {fileID: 2100000, guid: 5f847ac1038360b4eb79acd01992b983, type: 2}
+  - assetPath: Packages/zepeto.character.controller/Runtime/_Resources/AnimatorController/ZepetoAnimatorV2.controller
+    asset: {fileID: 9100000, guid: d45416f714b4fe74d9ddc118caf5f7c9, type: 2}
+  - assetPath: Assets/Res/5 FBX/dokkaebi/Dok_Around.controller
+    asset: {fileID: 9100000, guid: 2e19665cdd257c94683d7089dd6278dd, type: 2}
+  - assetPath: Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/V2/move_run_fast.anim
+    asset: {fileID: 7400000, guid: b37b0c3443ebd4913a439b51a0a3d5a4, type: 2}
+  - assetPath: Assets/Model/material/texture/Star_01.png
+    asset: {fileID: 2800000, guid: ab3de4a6b05e6a748b47a0166c797653, type: 3}
+  - assetPath: Assets/Res/2 Material/Cylinder.050 (1).prefab
+    asset: {fileID: 1960056386489051526, guid: 224317cda99467647bdb7d1ea3f0a996, type: 3}
+  - assetPath: Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/V2/move_turn.anim
+    asset: {fileID: 7400000, guid: 93ca3738330d7459b9000923398ae217, type: 2}
+  - assetPath: Assets/Res/1 Model/zzin glass tree.fbx
+    asset: {fileID: 919132149155446097, guid: b59faac0e63e8904ba54368c35f5bf0b, type: 3}
+  - assetPath: Assets/Res/1 Model/gayageum_mod.fbx
+    asset: {fileID: 919132149155446097, guid: 68d0ad167fa1358448d539c4e3837fe2, type: 3}
+  - assetPath: Assets/Model/material/texture/Star_02.png
+    asset: {fileID: 2800000, guid: 2aa924f3c95f80e4293784ac42393346, type: 3}
+  - assetPath: "Assets/Res/Image/Popup/5)\uAE30\uD0C0UI/\uBCF5\uC8FC\uBA38\uB2C8.png"
+    asset: {fileID: 2800000, guid: 6628e7b1e1365a840a421040f3cab9b4, type: 3}
+  - assetPath: Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/V2/move_run.anim
+    asset: {fileID: 7400000, guid: 3ee8a1247c52648f5b43bb0e970fdbec, type: 2}
+  - assetPath: Assets/1108 minzzing/New Animator Controller 6.controller
+    asset: {fileID: 9100000, guid: fbe390c5d19879a41bccd3384563d7cd, type: 2}
+  - assetPath: Assets/Res/5 FBX/dokkaebi/dokkaebi_HI_Ani.fbx
+    asset: {fileID: 919132149155446097, guid: ee89a18a42b0f0442ac8e4c431a99980, type: 3}
+  - assetPath: Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/jump_idle.anim
+    asset: {fileID: 7400000, guid: 089578e3895fc4828923286f37714b31, type: 2}
+  - assetPath: "Assets/Res/Image/Popup/3)\uD5CC\uD654\uACF5\uC6D0/\uD574\uBCC0\uACF5\uC6D0_\uBBF8\uC1582(\uC601\uC5B4\uD3EC\uD568).png"
+    asset: {fileID: 2800000, guid: 6782e267bdfa5b546b5b91eda485ea38, type: 3}
+  - assetPath: Packages/zepeto.character.controller/Runtime/_Resources/Animations/UI/Controller/touchpad_handle_origin_off.anim
+    asset: {fileID: 7400000, guid: 99e7b142bf1c54f4997386f92637a746, type: 2}
+  - assetPath: Assets/1108 minzzing/suro_still_Ani.fbx
+    asset: {fileID: 919132149155446097, guid: f0f249d507c3eef478f9103529599131, type: 3}
+  - assetPath: Assets/1108 minzzing/surohair.mat
+    asset: {fileID: 2100000, guid: 31ac9c8cafd19a04087870bc251577e0, type: 2}
+  - assetPath: Assets/Res/6 Anim/Animation/sunbed_lie_Ani.fbx
+    asset: {fileID: 919132149155446097, guid: bbf5a45ad7b55044f8682ab492300f71, type: 3}
+  - assetPath: Assets/Model/Effect/portal/other.png
+    asset: {fileID: 2800000, guid: 998b885b989a15a41b53652c631c2d32, type: 3}
+  - assetPath: Assets/Res/4 Shader_code/water.shader
+    asset: {fileID: 4800000, guid: 633ba5e747a1a5b45bd6195ba9484104, type: 3}
+  - assetPath: Assets/Model/SkySphere.prefab
+    asset: {fileID: 8940935319707901188, guid: 44ddcafd3a3dfc5489137bede71e553c, type: 3}
+  - assetPath: Packages/zepeto.character.controller/Runtime/_Resources/Images/touchpad_handle_icon.png
+    asset: {fileID: 2800000, guid: c958f44ee4c794bc4915476c48b2df0a, type: 3}
+  - assetPath: Assets/Res/6 Anim/Gesture_image/image_006_blue.png
+    asset: {fileID: 2800000, guid: dbc77b0fb19e8e34e92d7b3f693200d2, type: 3}
+  - assetPath: Assets/1108 minzzing/surocolth_sta.mat
+    asset: {fileID: 2100000, guid: ae2bb3f468fc8414db765d4373cc0c69, type: 2}
+  - assetPath: "Assets/Res/Image/Popup/2)\uB300\uB098\uBB34\uC232/\uC720\uB9AC\uB3D9\uAD74_\uBBF8\uC1583(\uC601\uC5B4\uD3EC\uD568).png"
+    asset: {fileID: 2800000, guid: 815ac34c1b02722468722748cfc635d0, type: 3}
+  - assetPath: Packages/zepeto.character.controller/Runtime/_Resources/Images/touchpad_jump_icon.png
+    asset: {fileID: 2800000, guid: da6db804593824177bb8ecaab3317f69, type: 3}
+  - assetPath: "Assets/Res/Image/Popup/\uB85C\uB529.png"
+    asset: {fileID: 2800000, guid: f74dd93b98deab544912c6c86639fded, type: 3}
+  - assetPath: Assets/Model/Effect/portal/glow-(157)_2.png
+    asset: {fileID: 2800000, guid: 41d42bfb1e62d44499e8376a49d9e30e, type: 3}
+  - assetPath: "Assets/Res/Image/Popup/5)\uAE30\uD0C0UI/1\uC778\uCE6D \uBCF5\uC0AC.png"
+    asset: {fileID: 2800000, guid: 63bcb61c75949ab42aef557a35a826f0, type: 3}
+  - assetPath: "Assets/Res/Image/Popup/1)\uBE44\uBC00\uC758\uC232/\uC6D4\uB4DC\uC785\uC7A5(\uC601\uC5B4\uD3EC\uD568).png"
+    asset: {fileID: 2800000, guid: 31e8fdd64f3bfb14a8088bc3ce9da7ae, type: 3}
+  - assetPath: Assets/1108 minzzing/butterfly_W_Ani.fbx
+    asset: {fileID: 919132149155446097, guid: 9edb7ec6df3321e4ead4502a6c5a14ec, type: 3}
+  - assetPath: Assets/1108 minzzing/suroFace_sta.mat
+    asset: {fileID: 2100000, guid: f1374ede7a300a54fb7296af7b66b044, type: 2}
+  - assetPath: Assets/Res/3 Texture/rainbow_toms3.png
+    asset: {fileID: 2800000, guid: 5106de6aa4d2943408edba1076c17f86, type: 3}
+  - assetPath: Assets/1108 minzzing/tree_o.png
+    asset: {fileID: 2800000, guid: c58240892e53c8242a4c1e5e066034dd, type: 3}
+  - assetPath: Assets/Model/Effect/fireflys/Materials/firework_circle.mat
+    asset: {fileID: 2100000, guid: b83bfe3aeee69e64eb4b49d494df02fa, type: 2}
+  - assetPath: Assets/1108 minzzing/suro_hair_col.jpg
+    asset: {fileID: 2800000, guid: 6be805bebde02bf4cab70f1fad3f9e72, type: 3}
+  - assetPath: Assets/1108 minzzing/suro_Body_col.png
+    asset: {fileID: 2800000, guid: 17d9ec4fa205a0e48a5f16acbfaf3fd2, type: 3}
+  - assetPath: Assets/1108 minzzing/tree y.mat
+    asset: {fileID: 2100000, guid: cea84d7b4a4ee5247a6d9d59ebde8935, type: 2}
+  - assetPath: Assets/Res/5 FBX/Deokbong/NPC_Deokbong_still_Ani_02.fbx
+    asset: {fileID: 919132149155446097, guid: 999632618fb2aee45a146a87fdfab98e, type: 3}
+  - assetPath: Assets/1108 minzzing/tree.mat
+    asset: {fileID: 2100000, guid: 98e5553923fb1aa4982e74262aa1ab51, type: 2}
+  - assetPath: Assets/Res/1 Model/rock.fbx
+    asset: {fileID: 919132149155446097, guid: 727e218447c43974fac10a19dac6ad09, type: 3}
+  - assetPath: Assets/Res/5 FBX/dokkaebi/Dok_Idle.controller
+    asset: {fileID: 9100000, guid: d3afd25052ceaed49af96ae92183c4c2, type: 2}
+  - assetPath: Assets/Res/2 Material/caveRock_floor.mat
+    asset: {fileID: 2100000, guid: 8d519a38e9339c44384b5686311c6ec0, type: 2}
+  - assetPath: Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/V2/jump_double.anim
+    asset: {fileID: 7400000, guid: 0d8dc1582dd594227be179efe817cac7, type: 2}
+  - assetPath: "Assets/Res/Image/Popup/1)\uBE44\uBC00\uC758\uC232/\uBE44\uBC00\uC758\uC232_\uBBF8\uC1582(\uC601\uC5B4\uD3EC\uD568).png"
+    asset: {fileID: 2800000, guid: ca5e72ce6d36ff348b54f4378899ecc3, type: 3}
+  - assetPath: "Assets/Res/Image/Popup/4)\uBC84\uD2BC/\uC124\uC815_\uC544\uC774\uCF58.png"
+    asset: {fileID: 2800000, guid: 8669d3142c2f4d444aab025c20e9f3d1, type: 3}
+  - assetPath: "Assets/Res/Image/Popup/3)\uD5CC\uD654\uACF5\uC6D0/\uD788\uB4E0\uC6D4\uB4DC(\uC601\uC5B4\uD3EC\uD568).png"
+    asset: {fileID: 2800000, guid: 4e84b22cd76dc4e4dbfe4cea2e963dd1, type: 3}
+  - assetPath: Assets/Res/6 Anim/animation_Gesture/ani_picture pose03_hold.fbx
+    asset: {fileID: 919132149155446097, guid: 83ab98aee9ba0294baeae66628d32dc9, type: 3}
+  - assetPath: Assets/Model/Particle System (37).prefab
+    asset: {fileID: 8401732852866963605, guid: a1e23d44774d94c428a486326244c9d4, type: 3}
+  - assetPath: Assets/Res/2 Material/New Material 2.mat
+    asset: {fileID: 2100000, guid: 2ccedef2a328640489c2f522768e4f57, type: 2}
+  - assetPath: Packages/zepeto.character.controller/Runtime/_Resources/Images/touchpad_handle_base.png
+    asset: {fileID: 2800000, guid: 9ca194b00aabf473e8b0ca5a3eaafffe, type: 3}
+  - assetPath: Assets/Res/2 Material/Green.mat
+    asset: {fileID: 2100000, guid: 52df5550b31cb914197abd610bbb397d, type: 2}
+  - assetPath: Assets/Res/5 FBX/dokkaebi/dokkaebi_SHD_baseColor.jpg
+    asset: {fileID: 2800000, guid: bebeb3ae808d7db4ca1943b2d0ef97dd, type: 3}
+  - assetPath: Assets/Res/4 Shader_code/Gradation.shader
+    asset: {fileID: 4800000, guid: 809445b53ff434d469e0fdd9f047f669, type: 3}
+  - assetPath: Assets/Model/3d_model/SkySphere.fbx
+    asset: {fileID: 100000, guid: 12c3e09317b433143b4e1e02cf14e5ef, type: 3}
+  - assetPath: Assets/Res/6 Anim/Gesture_image/image_gesture_ok_blue.png
+    asset: {fileID: 2800000, guid: 2cb743cbca5a1344ea97c00e5ed0c6f6, type: 3}
+  - assetPath: "Assets/Res/Image/Popup/5)\uAE30\uD0C0UI/on_\uBC84\uD2BC.png"
+    asset: {fileID: 2800000, guid: 1ced5fe6214ec6241bf6f8643869dc1f, type: 3}
+  - assetPath: Assets/Res/0 Prefeb/SkySphere.prefab
+    asset: {fileID: 8442602111983038447, guid: eee9cd955e420b3479f0cc1fd6355824, type: 3}
+  - assetPath: Assets/Res/2 Material/sky_summer.png
+    asset: {fileID: 2800000, guid: 6e190d4e2e0ce134b8c7146b9b5abbdb, type: 3}
+  - assetPath: "Assets/Res/Image/Popup/4)\uBC84\uD2BC/X\uBC84\uD2BC.png"
+    asset: {fileID: 2800000, guid: 6f8d7163ac6f8764382dc02f5f977497, type: 3}
+  - assetPath: "Assets/Res/Image/Popup/2)\uB300\uB098\uBB34\uC232/\uC720\uB9AC\uB3D9\uAD74_\uBBF8\uC1582(\uC601\uC5B4\uD3EC\uD568).png"
+    asset: {fileID: 2800000, guid: 5251953f3538a3a4c916e77ac543b5ca, type: 3}
+  - assetPath: Assets/New Folder 2/zepetocolorchart_alpha.mat
+    asset: {fileID: 2100000, guid: b1d0d31510abd3946a5be8a6a7e80cbd, type: 2}
+  - assetPath: Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/action1.anim
+    asset: {fileID: 7400000, guid: aba17ef185d9c42c095e153a36686ba5, type: 2}
+  - assetPath: Assets/New Folder 2/New Material.mat
+    asset: {fileID: 2100000, guid: 71883d42b99359e4284c7b6bdeee0f5f, type: 2}
+  - assetPath: "Assets/Res/Image/Popup/1)\uBE44\uBC00\uC758\uC232/\uBCF5\uC8FC\uBA38\uB2C8\uBAA8\uC73C\uAE30_\uC54C\uB9BC(\uC601\uC5B4\uD3EC\uD568).png"
+    asset: {fileID: 2800000, guid: ff5580399aa78b04db50be8718da2b1c, type: 3}
+  - assetPath: Assets/Res/2 Material/Sand.mat
+    asset: {fileID: 2100000, guid: d3226f58b865c5d4395aea3d8fa7c87d, type: 2}
+  - assetPath: Assets/Res/2 Material/4e1186a347a6506522ab24ce4d8b351d.jpg
+    asset: {fileID: 8900000, guid: f92d475637bbe614d916c344856003fb, type: 3}
+  - assetPath: "Assets/Res/Image/Popup/4)\uBC84\uD2BC/\uB2E4\uC74C\uBD80\uD130 \uBCF4\uC9C0
+      \uC54A\uAE30_\uBC84\uD2BC 1.png"
+    asset: {fileID: 2800000, guid: 9fff08f345f6e764e9a8f2c453495441, type: 3}
+  - assetPath: "Assets/Res/Image/Popup/4)\uBC84\uD2BC/\uB0B4\uB9AC\uAE30_\uC544\uC774\uCF58.png"
+    asset: {fileID: 2800000, guid: 39276b8923eece54fb7d90fe1c4ce567, type: 3}
+  - assetPath: Packages/zepeto.character.controller/Runtime/_Resources/Animations/UI/Controller/touchpad_handle_ziggle.anim
+    asset: {fileID: 7400000, guid: d16ef1916c85b4425a7d66ee8f375e19, type: 2}
+  - assetPath: Packages/zepeto.character.controller/Runtime/_Resources/Animations/UI/Controller/touchpad_handle_on.anim
+    asset: {fileID: 7400000, guid: 30e573d0c755644eaa5e1dfa86eb2462, type: 2}
+  - assetPath: "Assets/Res/Audio/\uC0BC\uCC99\uC2DC\uCCAD_\uD6A8\uACFC\uC74C/\uB355\uBD09\uC774/361927__robert-twent__hello.wav"
+    asset: {fileID: 8300000, guid: d3fcfcf8c7fe3e24c8abc84c414d6027, type: 3}
+  - assetPath: Assets/Res/2 Material/rainbow 1.mat
+    asset: {fileID: 2100000, guid: dc08755bc7707464b9c9583bf512ed47, type: 2}
+  - assetPath: "Assets/Res/Audio/4.\uD574\uBCC0\uAC00/Francesco DAndrea - The Doubt
+      (Part II).mp3"
+    asset: {fileID: 8300000, guid: 9e6822988186897478682bf7ea4a4fb9, type: 3}
+  - assetPath: Assets/Res/6 Anim/Gesture_image/image_002_blue.png
+    asset: {fileID: 2800000, guid: 86f089ff78860d643a12067b539b006d, type: 3}
+  - assetPath: Packages/zepeto.character.controller/Runtime/_Resources/AnimatorController/UIControllerTouchpadHandleOrigin.controller
+    asset: {fileID: 9100000, guid: 5f288db86f62c406988dd5a253fe2f94, type: 2}
+  - assetPath: Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/action2.anim
+    asset: {fileID: 7400000, guid: baa1362d8c18f49c6addf31b8a4c9021, type: 2}
+  - assetPath: "Assets/Res/Image/Popup/5)\uAE30\uD0C0UI/\uD018\uC2A4\uD2B8 \uD655\uC778.png"
+    asset: {fileID: 2800000, guid: 39d2895894f375349b8c7a1138a1e1d6, type: 3}
+  - assetPath: "Assets/Res/Image/Popup/4)\uBC84\uD2BC/\uC2E4\uD589_\uC544\uC774\uCF58.png"
+    asset: {fileID: 2800000, guid: 192ce5ee27ca4774286df912408e5225, type: 3}
+  - assetPath: Assets/1108 minzzing/suro_dragon.fbx
+    asset: {fileID: 919132149155446097, guid: 92cd521679f10514a9ea16d449d5d491, type: 3}
+  - assetPath: Packages/zepeto.character.controller/Runtime/_Resources/AnimatorController/UIControllerTouchpadHandle.controller
+    asset: {fileID: 9100000, guid: 844524d99ff1945d1b2985e983f3775c, type: 2}
+  - assetPath: "Assets/Res/Image/Popup/2)\uB300\uB098\uBB34\uC232/\uC720\uB9AC\uB3D9\uAD74_\uBBF8\uC1581(\uC601\uC5B4\uD3EC\uD568).png"
+    asset: {fileID: 2800000, guid: 72db8be7c9972724782a7034dfe3cf0c, type: 3}
+  - assetPath: Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/V2/jump_dash.anim
+    asset: {fileID: 7400000, guid: da3fb1523970c40e986536394f9ddb02, type: 2}
+  - assetPath: Assets/Model/material/texture/moon.jpg
+    asset: {fileID: 2800000, guid: 37dc67b71c3e74045887a403b1feb83a, type: 3}
+  - assetPath: Assets/Res/2 Material/Sky.mat
+    asset: {fileID: 2100000, guid: e76508e1fd71e214099f2e2c2b94dd60, type: 2}
+  - assetPath: Assets/1108 minzzing/tar.fbx
+    asset: {fileID: 919132149155446097, guid: 0899028f60d109245a81b15cad6263b1, type: 3}
+  - assetPath: Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/V2/move_walk_fast.anim
+    asset: {fileID: 7400000, guid: 4d5c25496692b4602b422bc47c03aeee, type: 2}
+  - assetPath: Assets/Res/3 Texture/sand.jpg
+    asset: {fileID: 2800000, guid: 801762f5c24d06c4bb2a9d715c112424, type: 3}
+  - assetPath: Packages/zepeto.character.controller/Runtime/_Resources/Prefabs/Shadow/CharacterShadow.prefab
+    asset: {fileID: 1025544020809228, guid: 4512418b2a1844f42961867ad8421ab8, type: 3}
+  - assetPath: Assets/New Folder 1/zepeto_colorchart_1320.png
+    asset: {fileID: 2800000, guid: e834070a1e4e5d043a25d0accb61660e, type: 3}
+  - assetPath: "Assets/Res/Image/Popup/5)\uAE30\uD0C0UI/off_\uBC84\uD2BC.png"
+    asset: {fileID: 2800000, guid: 656fb1da7ff5871449f394953f248ca4, type: 3}
+  - assetPath: Packages/zepeto.character.controller/Runtime/_Resources/Images/touchpad_jump_base.png
+    asset: {fileID: 2800000, guid: 5b13d326a52d8420cb9e4b87f84da3a1, type: 3}
+  - assetPath: "Assets/Res/Image/Popup/3)\uD5CC\uD654\uACF5\uC6D0/\uD574\uBCC0\uACF5\uC6D0_\uBBF8\uC1583(\uC601\uC5B4\uD3EC\uD568).png"
+    asset: {fileID: 2800000, guid: e9806d82eab4eb24e8cc32bb11f97d45, type: 3}
+  - assetPath: Assets/Res/5 FBX/Deokbong/NPC_Deokbong_Hi_Ani_02.fbx
+    asset: {fileID: 919132149155446097, guid: 34f9d98fe71a2274aa15b4acc817c362, type: 3}
+  - assetPath: Packages/zepeto.character.controller/Runtime/_Resources/Animations/Gesture/6_dance.anim
+    asset: {fileID: 7400000, guid: 0fd43b729b48d491eb64c3392ac308aa, type: 2}
+  - assetPath: Assets/1108 minzzing/New Animator Controller 8.controller
+    asset: {fileID: 9100000, guid: 42bd50159a6fcf94fa0b70d025f50259, type: 2}
+  - assetPath: Assets/Res/6 Anim/Gesture_image/image_gesture_dance_blue.png
+    asset: {fileID: 2800000, guid: 103ebd3aaef45b444bf5a3b54a542676, type: 3}
+  - assetPath: Packages/zepeto.character.controller/Runtime/_Resources/Animations/UI/Controller/touchpad_handle_origin_on.anim
+    asset: {fileID: 7400000, guid: 17b22abf4273e432d99f5151291e7f95, type: 2}
+  - assetPath: Assets/1108 minzzing/car.fbx
+    asset: {fileID: 919132149155446097, guid: 624837ad1c26c7d48933cba4f1234af6, type: 3}
+  - assetPath: "Assets/Res/Image/Popup/3)\uD5CC\uD654\uACF5\uC6D0/\uD574\uBCC0\uACF5\uC6D0_\uBBF8\uC1581(\uC601\uC5B4\uD3EC\uD568).png"
+    asset: {fileID: 2800000, guid: 2554288ade8dd1345a1747af3b3811fa, type: 3}
+  - assetPath: Assets/Res/5 FBX/dokkaebi/dokkaebi_Looking_Around_Ani.fbx
+    asset: {fileID: 919132149155446097, guid: cfd602cd69740e6479413a911871dee6, type: 3}
+  - assetPath: "Assets/Res/Image/Popup/1)\uBE44\uBC00\uC758\uC232/\uBE44\uBC00\uC758\uC232_\uBBF8\uC1581(\uC601\uC5B4\uD3EC\uD568).png"
+    asset: {fileID: 2800000, guid: 0bdfa583ce647594a90bd603695eebcd, type: 3}
+  - assetPath: Assets/Res/2 Material/caveRock_metal_cristal.mat
+    asset: {fileID: 2100000, guid: 2f5c91599f4c283428cd9dfdba5afcb5, type: 2}
+  - assetPath: Assets/Res/6 Anim/Animation/Ani_Tap_02.fbx
+    asset: {fileID: 919132149155446097, guid: 60e01c7369f322f4b935520571612a48, type: 3}
+  - assetPath: Assets/Res/4 Shader_code/rainbow_shadow.shader
+    asset: {fileID: 4800000, guid: c45313dca713b0a4f9ae517697589e86, type: 3}
+  - assetPath: "Assets/1108 minzzing/\uAE00_Material _25_BaseColor.png"
+    asset: {fileID: 2800000, guid: 89e728b46b486064b9a6efa54af9bde5, type: 3}
+  - assetPath: "Assets/Res/Image/Popup/2)\uB300\uB098\uBB34\uC232/\uBE44\uBC00\uC758
+      \uC232(\uC601\uC5B4\uD3EC\uD568).png"
+    asset: {fileID: 2800000, guid: d0a3ea1493b1b1d4fa847a766b8a3d54, type: 3}
+  - assetPath: Assets/Res/1 Model/vio pinwheel.fbx
+    asset: {fileID: 919132149155446097, guid: c6abe92501179b741b22ac2ddd7f186f, type: 3}
+  - assetPath: Assets/Res/1 Model/kayak_mod.fbx
+    asset: {fileID: 919132149155446097, guid: c3e99f22ec63eac45a829390ace2d7ef, type: 3}
+  - assetPath: Assets/Res/2 Material/caveRock_Wall.mat
+    asset: {fileID: 2100000, guid: e64a760cfa78a604bb7636d135f24af3, type: 2}
+  - assetPath: "Assets/Res/Image/Popup/5)\uAE30\uD0C0UI/\uC124\uC815\uCC3D 1.png"
+    asset: {fileID: 2800000, guid: 3536a2e9f30dfc947aa516bd257751df, type: 3}
+  - assetPath: "Assets/Res/Image/Popup/2)\uB300\uB098\uBB34\uC232/\uB300\uB098\uBB34_\uC644\uB8CC(\uC601\uC5B4\uD3EC\uD568).png"
+    asset: {fileID: 2800000, guid: 99ae6c839409e8440aba17495b4ecea3, type: 3}
+  - assetPath: Assets/1108 minzzing/dragonbottom.mat
+    asset: {fileID: 2100000, guid: 816c2ca3925709748a92b8d0c1cd529d, type: 2}
+  - assetPath: Assets/Res/6 Anim/Gesture_image/image_gesture_sleep_blue.png
+    asset: {fileID: 2800000, guid: f8e2fd589c51b6848ba9fc9c67b64108, type: 3}
+  - assetPath: Assets/Res/5 FBX/Deokbong/Deokbong_walk_Ani_02.controller
+    asset: {fileID: 9100000, guid: 46ea3723e4acf084e9aff73da217205a, type: 2}
+  - assetPath: Packages/zepeto.character.controller/Runtime/_Resources/Prefabs/Shadow/FxT_BlobShadow.png
+    asset: {fileID: 2800000, guid: 395d040650de243eb9de0bd417e3b0e9, type: 3}
+  - assetPath: Assets/Res/1 Model/baby duk bong.fbx
+    asset: {fileID: 919132149155446097, guid: 58cfeedf021c33147b0377307d37c0e6, type: 3}
+  - assetPath: Assets/Res/2 Material/UnderWater.mat
+    asset: {fileID: 2100000, guid: 30605fcccae91bc4b9dd3110b8a1de13, type: 2}
+  - assetPath: Packages/zepeto.character.controller/Runtime/_Resources/Animations/Gesture/4_ok.anim
+    asset: {fileID: 7400000, guid: 3ac870d7ab2c84c5bad2ade6d493ac0a, type: 2}
+  - assetPath: Assets/1108 minzzing/tree_g.fbx
+    asset: {fileID: 919132149155446097, guid: 4d8330cae6f505a45825698ab7c172b0, type: 3}
+  - assetPath: Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/V2/landing_deep.anim
+    asset: {fileID: 7400000, guid: 74f4980d8d3dc4a9ea0878dea7e21d06, type: 2}
+  - assetPath: Assets/Res/2 Material/forestTree_dark.mat
+    asset: {fileID: 2100000, guid: eac37df1699cf4243906d3f0a2ab8135, type: 2}
+  - assetPath: Assets/_Resources/[Materials]/ColorTexture_001.mat
+    asset: {fileID: 2100000, guid: 6dd07da24f2e8454681970250471c5c7, type: 2}
+  - assetPath: Assets/Res/2 Material/water 1.mat
+    asset: {fileID: 2100000, guid: 0b3a0ecfb18b26a458b465e7932a7a95, type: 2}
+  - assetPath: Assets/New Lighting Settings.lighting
+    asset: {fileID: 4890085278179872738, guid: 15fb8ae84ea13d147b02d8641aa29f36, type: 2}
+  - assetPath: "Assets/Res/Image/Popup/4)\uBC84\uD2BC/\uBC30\uB0AD_\uC544\uC774\uCF58.png"
+    asset: {fileID: 2800000, guid: 98ba95c015a8f404290ad4e9cd3ce70f, type: 3}
+  - assetPath: Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/V2/Falling.anim
+    asset: {fileID: 7400000, guid: 9beb77817f50f4873bb8dd4a41726d06, type: 2}
+  - assetPath: Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/V2/jump_Idle.anim
+    asset: {fileID: 7400000, guid: a42caac19eb044aa195dd25afd2eae3c, type: 2}
+  - assetPath: Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/V2/Stamp.anim
+    asset: {fileID: 7400000, guid: e7729cec6e85b463781eec8565e8fb7c, type: 2}
+  - assetPath: Assets/1108 minzzing/tree o.mat
+    asset: {fileID: 2100000, guid: 480837ec18e5ff446bf9dd21f40f0726, type: 2}
+  - assetPath: Packages/zepeto.character.controller/Runtime/_Resources/Animations/Gesture/5_sleep.anim
+    asset: {fileID: 7400000, guid: 45680816a5a604e7ba1c218088f53a2c, type: 2}
+  - assetPath: Assets/1108 minzzing/New Animator Controller 5.controller
+    asset: {fileID: 9100000, guid: 4bc8ace2a69deaa4e9ac90ab1490610c, type: 2}
+  - assetPath: Assets/Res/6 Anim/Gesture_image/image_004_blue.png
+    asset: {fileID: 2800000, guid: 68c9666f92dc2b248bb40e882039b52e, type: 3}
+  - assetPath: Assets/Res/1 Model/SkySphere.fbx
+    asset: {fileID: 919132149155446097, guid: 6a2d520b76d078d498d3114dacfc711c, type: 3}
+  - assetPath: Assets/Res/5 FBX/dokkaebi/Dok_Hi.controller
+    asset: {fileID: 9100000, guid: ed5dda0ae16410b48a08511105290cd8, type: 2}
+  - assetPath: Assets/Res/6 Anim/animation_Gesture/ani_picture pose01_hold.fbx
+    asset: {fileID: 919132149155446097, guid: 7e1cdf4550aaebd459c2c5fad6499c8a, type: 3}
+  - assetPath: "Assets/Res/Audio/1.\uB9C8\uC744/Sebastian Pangal - Preserve in Community.mp3"
+    asset: {fileID: 8300000, guid: fddaf8ea9062d1441859071eab8a4808, type: 3}
+  - assetPath: "Assets/Res/Image/Popup/5)\uAE30\uD0C0UI/\uB300\uB098\uBB34.png"
+    asset: {fileID: 2800000, guid: b739eac69085b1441af6ee44562a7321, type: 3}
+  - assetPath: Assets/1108 minzzing/tree g.mat
+    asset: {fileID: 2100000, guid: c856f5536b258dd49b989f8f2cf800c6, type: 2}
+  - assetPath: Assets/Res/1 Model/poezifan.fbx
+    asset: {fileID: 919132149155446097, guid: f66e9b6e4bf9fc749bd9f8a567eb48b5, type: 3}
+  - assetPath: Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/run.anim
+    asset: {fileID: 7400000, guid: 69a037643fec04d539fab537f50f143a, type: 2}
+  - assetPath: "Assets/Res/Image/Popup/4)\uBC84\uD2BC/\uB290\uB08C\uD45C.png"
+    asset: {fileID: 2800000, guid: 6f282f43626229947b5b371b380953a9, type: 3}
+  - assetPath: Assets/1108 minzzing/gzz.fbx
+    asset: {fileID: 919132149155446097, guid: 46e554c56273c3646bf0fb56d60c8ead, type: 3}
+  - assetPath: "Assets/Res/Audio/2-1.\uB300\uB098\uBB34\uC232/Liquid Memoirs - Bittersweet
+      Nightmare.mp3"
+    asset: {fileID: 8300000, guid: 6d35b4776b93fd648ade8dbb98cfe1ce, type: 3}
+  - assetPath: Assets/_Resources/[Materials]/Texture/ColorTexture_001.png
+    asset: {fileID: 2800000, guid: 37be44ec1dd9c1e48aa1beaa6f6f9b8c, type: 3}
+  - assetPath: Assets/1108 minzzing/butterfly_Y_Ani.fbx
+    asset: {fileID: 919132149155446097, guid: 8b614193250275f41b810ce2cff62172, type: 3}
+  - assetPath: Assets/1108 minzzing/dragon_bottom.png
+    asset: {fileID: 2800000, guid: 9592480f8a54f7d4285361fdc04a6fe2, type: 3}
+  - assetPath: Assets/1108 minzzing/New Animator Controller 4.controller
+    asset: {fileID: 9100000, guid: 907ef17685ee4ed45be448c072d2c393, type: 2}
+  - assetPath: Assets/Res/3 Texture/water 1.png
+    asset: {fileID: 2800000, guid: 7c442fe0f59f1574e99953aca5f579ec, type: 3}
+  - assetPath: Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/V2/move_walk.anim
+    asset: {fileID: 7400000, guid: 64a39a4a7a4cb4ba483524044641aa03, type: 2}
+  - assetPath: Assets/Model/shader_code/moon.shader
+    asset: {fileID: 4800000, guid: dbf47219277d93749a8a4c2c9d4ba836, type: 3}
+  - assetPath: Assets/Model/Effect/portal/smoke_m.mat
+    asset: {fileID: 2100000, guid: 0218e4361226c3044bc345c4db2e5b4b, type: 2}
+  - assetPath: "Assets/Res/Audio/2-2.\uC720\uB9AC\uB3D9\uAD74/Nobou - The Beginning.mp3"
+    asset: {fileID: 8300000, guid: 68dd379e95ebe8348847120fa2ced2a6, type: 3}
+  - assetPath: Packages/zepeto.character.controller/Runtime/_Resources/Prefabs/Shadow/FxT_BlobShadow.mat
+    asset: {fileID: 2100000, guid: 5104a9f86b024467999136edaf59654f, type: 2}
+  - assetPath: Packages/zepeto.character.controller/Runtime/_Resources/Prefabs/EventSystem.prefab
+    asset: {fileID: 7328100774219155841, guid: 67971ba158b48401988f9aad07940d6f, type: 3}
+  - assetPath: Assets/1108 minzzing/suro_Hi_Ani.fbx
+    asset: {fileID: 919132149155446097, guid: 264c39a62f07e9f449c02fc0af06bf18, type: 3}
+  - assetPath: Assets/Res/5 FBX/Deokbong/NPC_Deokbong_look_around_Ani_02.fbx
+    asset: {fileID: 919132149155446097, guid: 28d21f29b2e4d3c4e9d8a82ceaa9b375, type: 3}
+  - assetPath: Assets/1108 minzzing/zepeto_colorchart_1320 1.mat
+    asset: {fileID: 2100000, guid: 186b7a33b17b05a4389791c40fad7ec7, type: 2}
+  - assetPath: Assets/1108 minzzing/suba.fbx
+    asset: {fileID: 919132149155446097, guid: e33dc1e26b967c548859b641aba60ad2, type: 3}
+  - assetPath: Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/fall_end.anim
+    asset: {fileID: 7400000, guid: 7af54d170d4a4419e9af291140a5df9e, type: 2}
+  - assetPath: "Assets/Res/Image/Popup/3)\uD5CC\uD654\uACF5\uC6D0/\uC218\uB85C\uBD80\uC778\uAD6C\uD558\uAE30(\uB450\uB4DC\uB9AC\uAE30)_\uC54C\uB9BC(\uC601\uC5B4\uD3EC\uD568).png"
+    asset: {fileID: 2800000, guid: c9b64e593dec95b4e84632bd939ce455, type: 3}
+  - assetPath: Assets/1108 minzzing/gora.fbx
+    asset: {fileID: 919132149155446097, guid: 7f8e15e5df28277439522df602c0c21b, type: 3}
+  - assetPath: Assets/Res/6 Anim/Gesture_image/image_003_blue.png
+    asset: {fileID: 2800000, guid: ebc79113ef35b884b97c993a42a575e7, type: 3}
+  - assetPath: Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/V2/idle.anim
+    asset: {fileID: 7400000, guid: dd0408f906f6d4455bfcdea4f2c36bc0, type: 2}
+  - assetPath: Packages/zepeto.character.controller/Runtime/_Resources/Animations/base/hand_idle_01.anim
+    asset: {fileID: 7400000, guid: a8a227925c3f249ed87a8ceeb839e3d7, type: 2}
+  - assetPath: Packages/com.unity.inputsystem/InputSystem/Plugins/PlayerInput/DefaultInputActions.inputactions
+    asset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  - assetPath: Assets/Res/6 Anim/animation_Gesture/ani_picture pose05_hold.fbx
+    asset: {fileID: 919132149155446097, guid: 722232bd0edecaa49b4b9210e76ae56b, type: 3}
+  - assetPath: Assets/Model/Effect/portal/shock_Wave.mat
+    asset: {fileID: 2100000, guid: 199f8407c18331140a69c3c4b9698f29, type: 2}
+  - assetPath: "Assets/Res/Audio/\uC0BC\uCC99\uC2DC\uCCAD_\uD6A8\uACFC\uC74C/\uB355\uBD09\uC774/534715__owstu__bye-bye.wav"
+    asset: {fileID: 8300000, guid: c03b5812d49718c46a42f2ac819aae52, type: 3}
+  - assetPath: Assets/Res/2 Material/forestRock_dark 1.mat
+    asset: {fileID: 2100000, guid: 701844f722d96094db4a430948f0c738, type: 2}
+  resources:
+  - assetPath: New Material
+    asset: {fileID: 2100000, guid: 696a3ea5e9139314aabd76109c0cbf43, type: 2}
+  - assetPath: Prefabs/AudioObject
+    asset: {fileID: 6329106146781604253, guid: 1208f7b81efc1b640a19e25724ccbe26, type: 3}
+  - assetPath: Prefabs/grassesEff
+    asset: {fileID: 2391099891034588901, guid: 3e9ca5e70a14afa4db2e11f69c8b412d, type: 3}
+  - assetPath: Prefabs/Kayak
+    asset: {fileID: 2003743030212005307, guid: dc1ef4a3a18082d46aafc5cb5df76992, type: 3}
+  - assetPath: Prefabs/smokeEff
+    asset: {fileID: 1081321068161316042, guid: cde481a62af8682458c322379b0e2aca, type: 3}
+  - assetPath: Prefabs/star_p
+    asset: {fileID: 1733545011956380248, guid: 9bb7631b4720c9c4a82217a4c74359e3, type: 3}
+  - assetPath: Prefabs/UIAudioSourceObj
+    asset: {fileID: 931517735486221594, guid: 32b22ebdab514e74eb6bd3d4dec17be5, type: 3}
+  - assetPath: ScreenShot/Animator/IKZepetoAnimator
+    asset: {fileID: 9100000, guid: b8ead7b4b87b30345acdc37f5ab471f5, type: 2}
+  - assetPath: ScreenShot/doc/README
+    asset: {fileID: 4900000, guid: e71b91ce619ff4c3c80798675676d72d, type: 3}
+  - assetPath: ScreenShot/doc/ScreenShot_Setting1
+    asset: {fileID: 2800000, guid: 720346254ee4441cd848c4c20cbdbd29, type: 3}
+  - assetPath: ScreenShot/doc/ScreenShot_Setting2
+    asset: {fileID: 2800000, guid: 8840e20bbe9a9400bb1b3ce29e98de0a, type: 3}
+  - assetPath: ScreenShot/doc/ScreenShot_Setting3
+    asset: {fileID: 2800000, guid: 6a49aba08082c4c04a2512728746d28f, type: 3}
+  - assetPath: ScreenShot/doc/ScreenShot_Setting4
+    asset: {fileID: 2800000, guid: 4c05ad07c49a4433db41bafef302d210, type: 3}
+  - assetPath: ScreenShot/doc/ScreenShot_Setting5
+    asset: {fileID: 2800000, guid: 73dfd4140f40542c79493e349f1c3c75, type: 3}
+  - assetPath: ScreenShot/doc/ScreenShot_Setting6
+    asset: {fileID: 2800000, guid: bf9b46d3447224bf5ab27e53bba96a0a, type: 3}
+  - assetPath: ScreenShot/doc/ScreenShotSample
+    asset: {fileID: 2800000, guid: bf74cbb28b1f54b7e9ec2ea4366c7100, type: 3}
+  - assetPath: ScreenShot/SelfieCamera
+    asset: {fileID: 467963277368399132, guid: 64ed1f4a89b3b184986ebbdab59d0349, type: 3}
+  - assetPath: ScreenShot/SelfieStick/bundles/SelfieStick_Long
+    asset: {fileID: 1673898582022550, guid: c5793cd47ec51e94e998c5072cc55a03, type: 3}
+  - assetPath: ScreenShot/SelfieStick/FBX/SelfieStick_Long
+    asset: {fileID: 100000, guid: 14bf89cfb636da742801e591a574d7fa, type: 3}
+  - assetPath: ScreenShot/UI/Images/ic_arlet
+    asset: {fileID: 2800000, guid: 9b42675f6b7407a4ca4bf70c54b2cba2, type: 3}
+  - assetPath: ScreenShot/UI/Images/ic_camera
+    asset: {fileID: 2800000, guid: fc5cde90f9a07db42940ed5afc5be122, type: 3}
+  - assetPath: ScreenShot/UI/Images/ic_camera_bg
+    asset: {fileID: 2800000, guid: 721b4edc53d1fe74086d0f356afa831f, type: 3}
+  - assetPath: ScreenShot/UI/Images/ic_cameramode
+    asset: {fileID: 2800000, guid: 88613957c21ad794280a329ad9f3f8cf, type: 3}
+  - assetPath: ScreenShot/UI/Images/ic_check
+    asset: {fileID: 2800000, guid: f90d75a3746c9cd4ebffa8c5d8193ba4, type: 3}
+  - assetPath: ScreenShot/UI/Images/ic_close
+    asset: {fileID: 2800000, guid: ea96f0fb9e2145249bf37da6d888fb68, type: 3}
+  - assetPath: ScreenShot/UI/Images/ic_gesture
+    asset: {fileID: 2800000, guid: c43aa8809f6596141a07c9a1386576e4, type: 3}
+  - assetPath: ScreenShot/UI/Images/ic_save
+    asset: {fileID: 2800000, guid: 7c30c4eb68b71e24cb3c71a9dc3c75c8, type: 3}
+  - assetPath: ScreenShot/UI/Images/ic_selfiemode
+    asset: {fileID: 2800000, guid: 6acebe89249ad084187322a42d1e36d5, type: 3}
+  - assetPath: ScreenShot/UI/Images/ic_share
+    asset: {fileID: 2800000, guid: 6d95e99b839d5e54cbdc50d53578987f, type: 3}
+  - assetPath: ScreenShot/UI/Images/ic_shutter
+    asset: {fileID: 2800000, guid: 655f2a0a84a8deb42ad05519f2648628, type: 3}
+  - assetPath: ScreenShot/UI/Images/ic_transparent
+    asset: {fileID: 2800000, guid: 5b61e50655463d8428d930bb1b5992be, type: 3}
+  - assetPath: ScreenShot/UI/Images/ic_upload
+    asset: {fileID: 2800000, guid: 255b11ad4fc96154a9e98d9e8945f8c5, type: 3}
+  - assetPath: ScreenShot/UI/Images/image_ellipse_green
+    asset: {fileID: 2800000, guid: 70886a568bfa60b4eb07bf67de9f7d47, type: 3}
+  - assetPath: ScreenShot/UI/Images/image_ellipse_red
+    asset: {fileID: 2800000, guid: 39edfb5b3f4dfb7488a92efef4dd7d2c, type: 3}
+  - assetPath: ScreenShot/UI/Images/image_gesture_dance
+    asset: {fileID: 2800000, guid: e181674e773a2d24ca32986fee8ca49c, type: 3}
+  - assetPath: ScreenShot/UI/Images/image_gesture_ok
+    asset: {fileID: 2800000, guid: 47f2a55b1fcaa824fa5def33a5cc276c, type: 3}
+  - assetPath: ScreenShot/UI/Images/image_gesture_sleep
+    asset: {fileID: 2800000, guid: 77615ab9c5c557041b8fa416ed9ef4d4, type: 3}
+  - assetPath: ScreenShot/UI/Images/image_gesture_view_panel_rectangle
+    asset: {fileID: 2800000, guid: 0237a3b47238a93498ff6626cc68c2b7, type: 3}
+  - assetPath: ScreenShot/UI/Images/image_gesture_view_title_line
+    asset: {fileID: 2800000, guid: 2c5b923e15b400243a6925e3599d678c, type: 3}
+  - assetPath: ScreenShot/UI/Images/trnsbg
+    asset: {fileID: 2800000, guid: d17e3ad99c922694abacab63c6d8906b, type: 3}
+  - assetPath: ScreenShot/UI/ToastAnim
+    asset: {fileID: 7400000, guid: e4f93cc1adc5fd447a164f45aa603a4a, type: 2}
+  - assetPath: ScreenShot/UI/ToastErrorMessage
+    asset: {fileID: 783445681623887066, guid: ae2013e54f4c1b243aa96ec4dd92c9d4, type: 3}
+  - assetPath: ScreenShot/UI/ToastSuccessMessage
+    asset: {fileID: 523064580509784242, guid: 6c1a233f6fdb20b45b13cde58d788a28, type: 3}
+  - assetPath: ScreenShot/ZepetoScreenShotRenderTexture
+    asset: {fileID: 8400000, guid: ed90a4d384b363548a7068a8beb384ac, type: 2}
+  - assetPath: UIController_Touchpad_Horizontal
+    asset: {fileID: 2787167779785370926, guid: 3ab0e77a21c9b4013b1f6931717f766a, type: 3}
+  - assetPath: UIController_Touchpad_Vertical
+    asset: {fileID: 8523051459139762370, guid: 94b12a3ac04f847b3b97a3f2f3ada18c, type: 3}
+  - assetPath: ZepetoScreenShotModule
+    asset: {fileID: 8185726887184680661, guid: 5393e573aeb53b846ba88ff7c46d57c4, type: 3}
+  manifest: {fileID: 11400000, guid: fe0a753c5c641b54c9df1ab5e6b9a4d8, type: 2}
+  enableCustomTags: 0
+  enableCustomLayers: 1
+  enableResources: 1
